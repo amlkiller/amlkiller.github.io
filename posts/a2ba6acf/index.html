@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <!-- title -->
+
+
+    
+
+<!-- keywords -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="amlkiller">
+    <meta name="renderer" content="webkit">
+	<meta name="referrer" content="no-referrer">
+    <meta name="copyright" content="amlkiller">
+    
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="序这里是记录电子版的优秀作文，不限时间。都是我们212班der~ 迎难而上，不负韶华212班邓子君（区二等奖） ——读《钢铁是怎样炼成的》有感 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp; “人最宝贵的是生命，每个人的生命只有一次。人的一生应该这样度过：当他回首往事的时候，他不会因为虚度年华而悔恨，不因碌碌无为而羞耻。”这经典名言，在我懵懂的心灵中增添了一笔浓墨。  本书讲述了主人公保尔·柯察">
+<meta property="og:type" content="article">
+<meta property="og:title" content="周记好作文-word">
+<meta property="og:url" content="https://amlkiller.github.io/posts/a2ba6acf/index.html">
+<meta property="og:site_name" content="amlkiller&#39;s studio.">
+<meta property="og:description" content="序这里是记录电子版的优秀作文，不限时间。都是我们212班der~ 迎难而上，不负韶华212班邓子君（区二等奖） ——读《钢铁是怎样炼成的》有感 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp; “人最宝贵的是生命，每个人的生命只有一次。人的一生应该这样度过：当他回首往事的时候，他不会因为虚度年华而悔恨，不因碌碌无为而羞耻。”这经典名言，在我懵懂的心灵中增添了一笔浓墨。  本书讲述了主人公保尔·柯察">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-31T15:10:37.317Z">
+<meta property="article:author" content="amlkiller">
+<meta property="article:tag" content="作文">
+<meta name="twitter:card" content="summary">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="/assets/favicon.ico">
+    
+    <title>周记好作文-word · amlkiller&#39;s studio</title>
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+    (function (w) {
+        'use strict'
+        // rel=preload support test
+        if (!w.loadCSS) {
+            w.loadCSS = function () {}
+        }
+        // define on the loadCSS obj
+        var rp = (loadCSS.relpreload = {})
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function () {
+            var ret
+            try {
+                ret = w.document.createElement('link').relList.supports('preload')
+            } catch (e) {
+                ret = false
+            }
+            return function () {
+                return ret
+            }
+        })()
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function (link) {
+            // remember existing media attr for ultimate state, or default to 'all'
+            var finalMedia = link.media || 'all'
+
+            function enableStylesheet() {
+                link.media = finalMedia
+            }
+
+            // bind load handlers to enable media
+            if (link.addEventListener) {
+                link.addEventListener('load', enableStylesheet)
+            } else if (link.attachEvent) {
+                link.attachEvent('onload', enableStylesheet)
+            }
+
+            // Set rel and non-applicable media type to start an async request
+            // note: timeout allows this to happen async to let rendering continue in IE
+            setTimeout(function () {
+                link.rel = 'stylesheet'
+                link.media = 'only x'
+            })
+            // also enable media after 3 seconds,
+            // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+            setTimeout(enableStylesheet, 3000)
+        }
+
+        // loop through link elements in DOM
+        rp.poly = function () {
+            // double check this to prevent external calls from running
+            if (rp.support()) {
+                return
+            }
+            var links = w.document.getElementsByTagName('link')
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i]
+                // qualify links to those with rel=preload and as=style attrs
+                if (
+                    link.rel === 'preload' &&
+                    link.getAttribute('as') === 'style' &&
+                    !link.getAttribute('data-loadcss')
+                ) {
+                    // prevent rerunning on link
+                    link.setAttribute('data-loadcss', true)
+                    // bind listeners to toggle media back
+                    rp.bindMediaToggle(link)
+                }
+            }
+        }
+
+        // if unsupported, run the polyfill
+        if (!rp.support()) {
+            // run once at least
+            rp.poly()
+
+            // rerun poly on an interval until onload
+            var run = w.setInterval(rp.poly, 500)
+            if (w.addEventListener) {
+                w.addEventListener('load', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            } else if (w.attachEvent) {
+                w.attachEvent('onload', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            }
+        }
+
+        // commonjs
+        if (typeof exports !== 'undefined') {
+            exports.loadCSS = loadCSS
+        } else {
+            w.loadCSS = loadCSS
+        }
+    })(typeof global !== 'undefined' ? global : this)
+</script>
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20210823" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/dark.css?v=20210823" as="style">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/mobile.css?v=20210823" media="(max-width: 960px)">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js?v=20210823" as="script">
+    <link rel="preload" href="/scripts/dark.js?v=20210823" as="script">
+    <link rel="preload" href="/font/Oswald-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" as="font" crossorigin>
+    <!-- algolia -->
+    
+    <!-- 百度统计  -->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b41000faa4c81adedb22039a6da2e4b8";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ == undefined) {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js" />')
+        }
+    </script>
+    
+        <body class="post-body">
+    
+        <!-- header -->
+        <header class="header header-mobile">
+    <!-- top read progress line -->
+    <div class="header-element">
+        <div class="read-progress"></div>
+    </div>
+    <!-- sidebar menu button -->
+    <div class="header-element">
+        
+            <div class="header-sidebar-menu">
+        
+            
+                <div style="padding-left: 1px;">&#xe775;</div>
+            
+        </div>
+    </div>
+    <!-- header actions -->
+    <div class="header-actions">
+        <!-- theme mode switch button -->
+        <span class="header-theme-btn header-element">
+            <i class="fas fa-adjust"></i>
+        </span>
+        <!-- back to home page text -->
+        <span class="home-link header-element">
+            <a href=/>amlkiller's studio</a>
+        </span>
+    </div>
+    <!-- toggle banner for post layout -->
+    
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">amlkiller&#39;s studio</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">周记好作文-word</a>
+            </div>
+        </div>
+    
+</header>
+
+        <!-- fixed footer -->
+        <footer class="footer-fixed">
+    <!-- back to top button -->
+    <div class="footer-fixed-element">
+        
+            <div class="back-top back-top-hidden">
+        
+        
+            <div>&#xe639;</div>
+        
+        </div>
+    </div>
+</footer>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="site-intro" style="
+
+
+
+
+
+
+
+    height:50vh;
+
+">
+    
+    <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+                周记好作文-word
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+                
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="作文">作文</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">11.8k</span>阅读时长: <span class="post-count reading-time">40 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2021/04/12</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+            <script>
+  // get user agent
+  function getBrowserVersions() {
+    var u = window.navigator.userAgent
+    return {
+      userAgent: u,
+      trident: u.indexOf('Trident') > -1, //IE内核
+      presto: u.indexOf('Presto') > -1, //opera内核
+      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+      iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+      iPad: u.indexOf('iPad') > -1, //是否为iPad
+      webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+      weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+      uc: u.indexOf('UCBrowser') > -1, //是否为android下的UC浏览器
+    }
+  }
+  var browser = {
+    versions: getBrowserVersions(),
+  }
+  console.log('userAgent: ' + browser.versions.userAgent)
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded')
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document
+        .getElementsByClassName('intro-title')[0]
+        .classList.add('intro-fade-in')
+      document
+        .getElementsByClassName('intro-subtitle')[0]
+        .classList.add('intro-fade-in')
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in')
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb() {
+    if (browser.versions.uc) {
+      console.log('UCBrowser')
+      fontLoaded()
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular'],
+        },
+        loading: function () {
+          // 所有字体开始加载
+          // console.log('font loading');
+        },
+        active: function () {
+          // 所有字体已渲染
+          fontLoaded()
+        },
+        inactive: function () {
+          // 字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout')
+          fontLoaded()
+        },
+        timeout: 5000, // Set the timeout to two seconds
+      })
+    }
+  }
+
+  function asyncErr() {
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0]
+    o.src = u
+    if (cb) {
+      o.addEventListener(
+        'load',
+        function (e) {
+          cb(null, e)
+        },
+        false
+      )
+    }
+    if (err) {
+      o.addEventListener(
+        'error',
+        function (e) {
+          err(null, e)
+        },
+        false
+      )
+    }
+    s.parentNode.insertBefore(o, s)
+  }
+
+  var asyncLoadWithFallBack = function (arr, success, reject) {
+    var currReject = function () {
+      reject()
+      arr.shift()
+      if (arr.length) async(arr[0], success, currReject)
+    }
+
+    async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack(
+    [
+      'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js',
+      'https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js',
+      "/lib/webfontloader.min.js",
+    ],
+    asyncCb,
+    asyncErr
+  )
+</script>
+
+            <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+            <div class="container container-unloaded">
+                <main class="main post-page">
+    <article class="article-entry">
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\xwkblog\assets\css\APlayer.min.css"><script src="\xwkblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="序"><a href="#序" class="headerlink" title="序"></a>序</h3><p>这里是记录电子版的优秀作文，不限时间。都是我们<strong>212班</strong>der~</p>
+<h1 id="迎难而上，不负韶华"><a href="#迎难而上，不负韶华" class="headerlink" title="迎难而上，不负韶华"></a>迎难而上，不负韶华</h1><p><strong>212班邓子君（区二等奖）</strong></p>
+<p align="right">——读《钢铁是怎样炼成的》有感</p>
+&ensp;&ensp;&ensp;&ensp; “人最宝贵的是生命，每个人的生命只有一次。人的一生应该这样度过：当他回首往事的时候，他不会因为虚度年华而悔恨，不因碌碌无为而羞耻。”这经典名言，在我懵懂的心灵中增添了一笔浓墨。
+ 本书讲述了主人公保尔·柯察金从一个在社会底层挣扎的贫苦青年，逐渐成长为一个为祖国、为人民的事业奋斗终生的无产阶级革命战士的历程。曾做店员任人欺侮，曾救朱赫来而坐牢，曾在硝烟弥漫的战场上濒临死亡 曾全心投入国家建设而几次倒下……这就是保尔——一位坚毅、勇敢、无私奉献的英雄，他把宝贵的青春献给了党和人民，即使是全身瘫痪也继续提笔奋斗，永不言弃。我想，人生亦是如此吧。
+
+<p> &ensp;&ensp;&ensp;&ensp;“轮椅上的‘宇宙之王’”史蒂芬·霍金，一生都效力于科学研究。可惜天妒英才，他不幸地在21岁那年患上了肌肉萎缩性侧索硬化症，全身瘫痪，不能言语，手部只有三根手指可以活动。然而，他并没有因此自暴自弃，相反，他在不被看好的情况下继续自己的科学研究工作。质疑、嘲讽不断向他袭来，加上病魔持续的肆虐，给他造成了极大的干扰。要是换作别人，也许早就放弃了；但他是谁啊？他可是霍金啊！他先是创作出了科学巨著：《时间简史》，接着继续探索那个无尽的宇宙的奥秘，《果壳中的宇宙》、《大设计》等名著又接连诞生，给了后世科学家们指向明路。他的一生，是人类意志力的楷模，是科学界的奇迹！</p>
+<p>&ensp;&ensp;&ensp;&ensp; 人的一生，注定是上天给我们的一次磨练，就如大诗人于谦在《石灰吟》中写到的“千锤万凿出深山，烈火焚烧若等闲。粉骨碎身全不怕，要留清白在人间。”无论遇到什么困难，无论人生路途多么艰险，也无论上天对我们有多不公平，我们都要迎难而上，不负韶华，为社会、为祖国、为人民贡献自己的一份力量!</p>
+<h1 id="被忽略的光芒"><a href="#被忽略的光芒" class="headerlink" title="被忽略的光芒"></a>被忽略的光芒</h1><p><strong>21205杜子麒（区二等奖）</strong></p>
+<p align="right">——读《红岩》有感</p>
+&ensp;&ensp;&ensp;&ensp;时代的舞台上群星璀璨，掩盖了那些暗淡却不可或缺的六等星。
+每每说起《红岩》，人们总把江姐，许云峰，成岚等的故事津津乐道。确实，江姐被捕后，由于其掌握着党的机密，受到国民党惨无人道的折磨，尤其是竹签之刑，粗大的竹签竟被狠狠刺进江姐的手指，十指连心，江姐所承受的痛苦早已超出常人，她竟仍对党的机密守口如瓶，未曾透露过一言半语，着实可敬.
+
+<p>&ensp;&ensp;&ensp;&ensp;许云峰也同样如此，他为了掩护李敬元脱身，不惜暴露自身，不幸被捕后，关在白公馆的地下室里。他想着为以后的越狱行动挖出一条路，双手都挖出血痕了，他仍以惊人的毅力硬是开出一条路。他曾被邀请到国民党高层的一个晚宴，正所谓“鸿门宴”，这个宴会充满了国民党精心设计的陷阱，许云峰，这位可敬的党员，一直以冷静稳重的态度巧妙的化解了国民党所有的可恶的阴谋。</p>
+<p>&ensp;&ensp;&ensp;&ensp;还有陈岚，是他一直为党印刷“挺进报”。印刷室位置暴露后，他不惜放弃逃跑的机会，为战友挂出警告信号，被国民党特务逮捕后不久便遭枪杀，再比如刘思扬，他虽出生资本，却坚持为党奋斗，不幸入狱后被家人重金保释出狱，可即便如此，他仍想方设法地为党贡献。</p>
+<p>&ensp;&ensp;&ensp;&ensp;这些人无疑是伟大的时代英雄，人们也喜欢关注台面的英雄们，却总把撑起英雄的无数人忽略，正如关注到华子良的人寥寥无几。</p>
+<p>&ensp;&ensp;&ensp;&ensp;华子良是一个深藏不露的共产党员，从被捕关进白公馆，再到一次处刑时被枪声“吓破了胆”，从此十几年再未开口说话。他装疯卖傻，骗过国民党，混成监狱的厨师，成为越狱计划的联络人。他每天跑步，风雨无阻，为后来的行动做好准备。即使后来被国民党抓去打游击，他也能神不知鬼不觉的逃脱，竟然还能带领一队红军战士突击，白公馆接应越狱的党员，最后功成身退。我还特地查阅了正史中与之对应的人物，他竟是十几年来唯一一个毫发无损从白公馆脱身的党员。</p>
+<p>&ensp;&ensp;&ensp;&ensp;或许你会说他没有经历像江姐那样的酷刑，可有句话说得好，孤独是最可怕的，十几年都没说过一句话，印证了华子良内心的强大。或许你会说他无足轻重，他无足轻重吗？当越狱计划进行时，白公馆的党员们唯一与外界联络的通道，是他，党员们唯一的武器也是他带来的，甚至整个越狱计划的制定，也是建立在他窃得的国民党机密上的。无疑疑问，他就是一颗光芒暗淡的却又不可或缺的六等星。</p>
+<p>&ensp;&ensp;&ensp;&ensp;现在我们所生活的世界没有硝烟，似盛世，太平无忧。当真如此吗？“落后就要挨打”这句话不无道理。用不了多少年，就是我们的时代了，我们打的是经济，社会，文化科技发展的战争，我们不用学习华子良的深藏不露，但我们要学习他的隐忍，寒窗十年，一鸣惊天下！</p>
+<h1 id="物理常在身边"><a href="#物理常在身边" class="headerlink" title="物理常在身边"></a>物理常在身边</h1><p><strong>21220耿浩恩（区三等奖）</strong></p>
+<p align="right">——读«趣味物理学»有感</p>
+&ensp;&ensp;&ensp;&ensp;当我们感叹科技的强大，当神舟在蓝天之下徐徐升起；你可曾想过，它们的来源。爱因斯坦的相对论，牛顿的万有引力，这一切的一切，都与我们息息相关。今天，我将为你诉说一本书——«趣味物理学»带给我的感受。
+
+<p>&ensp;&ensp;&ensp;&ensp;古时候，所谓物理，即是事物的道理。读完这本书后，我认为，古往今来，物理其实并未改变，只不过，一个是答案，另一个是证明而已，所以，不管以前，现在或是未来，物理的改变，就只有深入研究物理的过程。<br>&ensp;&ensp;&ensp;&ensp;“给我一个支点，我将撬动地球”这句话，是句励志之语，但是，有些人并不知道的是，这是阿基米德提出杠杆原理时的一句玩笑，但是，这边是物理的美，外表高傲励志，内在却又低调而富含真理。在我小的时候，我的父亲便告诉我：“物理改变世界，你要……”听完父亲的话后，我总会兴致勃勃的思考，思考物理的强大，思考物理的繁华。<br>&ensp;&ensp;&ensp;&ensp;每当思想回到现实，望着眼前的车水马龙，听着不同机械的撞击声，感受着在城市中的种种，我总会不由得感叹这个由物理组成的世界，令我感到陌生而又神秘。<br>&ensp;&ensp;&ensp;&ensp;这便是我所有的感受；“时间再加速，时代在召唤”，物理在我们身边，世界的未来离不开物理，当然，也离不开我们，所以，让我们为了未来而努力，学习物理吧！</p>
+<h1 id="“从天而降”的幸运"><a href="#“从天而降”的幸运" class="headerlink" title="“从天而降”的幸运"></a>“从天而降”的幸运</h1><p><strong>21232冯昀（区三等奖）</strong></p>
+<p align="right">——《幸运女神的宠儿》读后感</p>
+
+<p>&ensp;&ensp;&ensp;&ensp;《幸运女神的宠儿》，当我看到书名后，一脑袋的问号就浮现出来。直到看完这本书后，心底的疑团才被解开。<br>&ensp;&ensp;&ensp;&ensp;这是一个关于幸运女神的故事，听说被幸运女神吻过的人会成为运气最好的人，于是，所有人都挤在幸运树下祈祷好运降临，连小动物也跟着祈祷。但欢乐村庄的两位伙伴告诉笑猫，幸运女神的宠儿竟然是一只很笨的猪。<br>&ensp;&ensp;&ensp;&ensp;这时一个疑问又浮上心头：为什么幸运女神的宠儿不是聪明的狗汪汪，不是博学的猫咪咪，却是很笨的笨笨猪呢？原来笨笨猪善良，认真，专注，乐于助人。他为了救村庄，让居民们喝到泉水，跋山涉水地去到高山顶；为了让邻居吃到百花蜜，宁愿自己被蜇得全身都是包。笨笨猪总是能专注地做每一件事，幸运女神就是看中了笨笨猪做事的态度，才会让他拥有好运。<br>&ensp;&ensp;&ensp;&ensp;其实在现实不也是这样吗？只有专注认真地对待一件事才能做好。记得有一次，我和其他同学代表学校去香港交流，同学们都说是我运气好才能遇上这么难得的机会。其实这次机会都是自己争取来的，同学们在上课、自习的时候，我们还在练习。与其在人群中引人注目，步步紧逼，不如做一个不张扬，不浮躁的人，万事各得其所，专注在每时每刻，每一件事。<br>&ensp;&ensp;&ensp;&ensp;春风吹皱了湖面，倒映着湖边婀娜柔软的柳枝；春风吹开了花蕾，绽放出万紫千红的春光。幸运女神从未抛弃过每一个努力生长的生命，从未遗忘过每一个认真生活的行人。所有始料不及的温暖，都是幸运女神在帮助、改变着那些看似惨淡、悲伤的人生。</p>
+<h1 id="心态游戏"><a href="#心态游戏" class="headerlink" title="心态游戏"></a>心态游戏</h1><p><strong>21203何俊杰</strong></p>
+<p>&ensp;&ensp;&ensp;&ensp;人生就像一场游戏，起起伏伏。或许一帆风顺，又或许荆棘遍地。但我觉得，只要心中有坚定的信念，你就能创造不平凡的事。游戏中，最重要的还有心态，而最近的一节心理课上，我的心态却遭到了莫大的打击。<br>&ensp;&ensp;&ensp;&ensp;像往常一样，双周周五的上午，我们又迎来了心理课。这个学期，老师安排活动的形式大多以游戏为中心，这节课，游戏的名字叫做“齐眉棍”。规则是用食指第二关节托住，在棍子不倾斜和手指不离棍的情况下，一起将棍子举到与各人眉毛齐平的位置。一番准备过后，第一轮游戏开始了。没什么经验的我们，可是一次又一次倒在了胜利的门前，被失败感萦绕的我，情绪不免有点失控。<br>&ensp;&ensp;&ensp;&ensp;然而，我还是很快整理了思绪，平静了下来，与组员商量起了对策。第二轮很快又开始了，在此过程中，裁判却说出了一些奇怪的规则，只听她大声说到：“手指弯了，重来！”“手靠太近了，重来！”“太快了，重来！”一旁的关同学终于忍不住了，“怎么还有这些乱七八糟的理由，不会是老师派来捣乱的吧！”我心中的疑惑油然而生，明明没有这些规则，怎么会这么怪异呢？难道真如关子铭所说，是早有预谋的？不出所料，我们又没成功。<br>&ensp;&ensp;&ensp;&ensp;最后又进行了第三次尝试，一个同学连连出错，导致陷入了瓶颈期。前面几次他的确是错了，但在众目睽睽之下，他还能顶着压力继续，心态也算挺好的了。这时，队伍对裁判有了争议，明明不是他的错，为什么指他？结束了，我们仍未成功。后面老师说道，第一轮是加强了规定；第二轮，让裁判无论如何都要阻止我们成功；而最后一轮就是指定一个人不断说错。不得不说，这个计谋让许多同学心态出现了很大波动。<br>&ensp;&ensp;&ensp;&ensp;人生如戏啊，这一次游戏极大地磨炼了我们的意志与心态，良好的心态也正是让我们坚持下去的内驱力。这堂课后，我也真正明白，每一个成功人的背后必然有着一颗强大的内心与平稳的心态。或许会一次次被击倒，但正是挫败鼓舞着我们继续前行!</p>
+<h1 id="春雨"><a href="#春雨" class="headerlink" title="春雨"></a>春雨</h1><p><strong>金子幸</strong></p>
+<p>&ensp;&ensp;&ensp;&ensp;雨李最旺的时候要属春天了。春雨也成了春天的一大特色。春雨和夏雨不同，夏雨是粗犷豪放，倾盆而下的，而春雨则是轻柔纤细，就像一个温柔的姑娘。<br>&ensp;&ensp;&ensp;&ensp;春雨总是悄无声息地来到人间，这也让我想到了杜甫的诗向:随风潜入夜，润物细无声。就像今天一样，它在灰蒙蒙的天空中渐淅沥沥地下着。最开始它如一粒米大小，从空中一滴一滴落在大地上的每一个角落。它落到马路上，灰色的马路就像刷上了一层黑色的油漆，立马变得乌黑乌黑的。它落到植物上，大树就像一把绿色的大伞为树底下的小动物们遮风挡雨，而小花小草们尽情的吸收着这大自然的馈赠。它落到了正在外面的路人上,正赶路的人一看下雨了，便更加快了脚步,时不时还在咒骂这变幻无常的天气。<br>&ensp;&ensp;&ensp;&ensp;在外玩要的孩子们也都被母亲叫回了家,还有几个调皮的孩子还在冒雨踢皮球呢!慢慢地它越下越大，也越下越密，它像那牛毛，也似那花针，非常细,不仔细看还看不清楚呢!一阵微风吹过，雨中的味道随之扑鼻而来，而当中的味道也十分丰富。有泥土中泥土的土香味，有刚破嫩芽的小草的清香味，有路边随处可见的小野花的清甜味，这清香就是春雨的自然香水。春雨来得快去得也快，它渐渐停了下来。雨后的世界就像焕然一新了一样，它滋润了世间万物，使大地更加明净，充满了勃勃的生机。<br>&ensp;&ensp;&ensp;&ensp;大自然的一切都很美妙，也都很奇妙，它们就是这个世界的记录者，记录着这世界上的点点滴滴！</p>
+<h1 id="哇，好香"><a href="#哇，好香" class="headerlink" title="哇，好香"></a>哇，好香</h1><p><strong>祝咏嘉</strong></p>
+<p>&ensp;&ensp;&ensp;&ensp;岁月轻轻滑过指尖，许多往事便渐渐弥散在如沙漏般的光阴里面，再次翻开记忆的相册，逝去些许灰尘，映入眼帘的是一幅幅珍藏在回忆里面的画面。<br>&ensp;&ensp;&ensp;&ensp;亲情，把记忆烤得蓬松而馨香。<br>&ensp;&ensp;&ensp;&ensp;每晚放学我拖着沉重的步伐回到家门口，手指轻轻的触碰到门铃，屋内便响起一阵急促的脚步声。外婆麻利地把门打开，替我拿下沉重的书包，又转身进了厨房，喊：“乖孙，去，去洗手，我煲了靓汤，你可要多喝一些。”我应着，去洗干净了手，出来就看到桌上那一碗热腾腾的汤。哇，好香！我拿着汤匙在碗底轻轻搅了搅，里面有猪肉、胡萝卜、莲子、红枣，还有些许百合，可谓是人间美味了。“好喝吗？”只见外婆站在我跟前，笑着问我。“好喝呀，这汤好甜，闻起来也香。”外婆笑了，眼里尽是疼爱。<br>&ensp;&ensp;&ensp;&ensp;大颗的红枣被切半，枣肉吸进了汤水，一口咬下去，里面的汤水就溢满了整个口腔。猪肉被切成薄薄的一片，在浓汤里若隐若现，胡萝卜被切成一粒粒的，这给那碗冒着热气的汤又增添了一丝神秘的色彩。我偷偷看了一眼外婆，发现外婆也在看我，外婆连忙收回目光，低头去抿了一小口汤，我也低下头，偷偷地笑了。<br>&ensp;&ensp;&ensp;&ensp;这样的画面每晚都会在我家上演，而这样的画面已经深深的印在我的脑海，不可忘却。外婆今年已经74岁了，她还是坚持中午、晚上都给我做饭，每天都煲汤，少一天不煲汤都不行。煲汤是她的命，更是她对我深深的爱。<br>&ensp;&ensp;&ensp;&ensp;光阴似箭，日月如梭，生活中的记忆会随着时间的流逝而褪色，但是被亲情烤过的记忆不会。看吧，还是热热的，还是那么香。</p>
+<h1 id="火红的记忆"><a href="#火红的记忆" class="headerlink" title="火红的记忆"></a>火红的记忆</h1><p><strong>丁嘉锐</strong></p>
+<p>&emsp;&emsp;校园的红棉树又开花了，在我的记忆网里，红棉是不可缺少的一部分，火红的花，我或许是忘不了的。<br>&emsp;&emsp;对于红棉的记忆，起源于童年。红棉是我记忆最深的两种花之一。童年的我记不清红棉的花季，那时不会在意那么多，只在意拾红棉花。只拾那些新鲜，完整的花，把那些新鲜的红棉花带回去，母亲便把花晒干。<br>&emsp;&emsp;学校有好几棵红棉树。树龄最大的红棉树正对初二教学楼。那棵红棉树树干要好几个人才能抱一圈，树根突兀，蜿蜒。树干上有好几个疙瘩，树皮裂痕斑斑，抬头望去，树上虬技，只看到红与褐交融。这红棉树没有楠木的秀颀，没有白杨的坚韧。<br>&emsp;&emsp;从三楼望去能看到树的全貌，树上开满了红色的红棉花，树上绿叶凋零，这一树的火红是那么的突出，那么的吸引人的眼球。让人的眼睛完全挪不开。不时有些红棉掉落，空中旋转，翻飞，在生命的最后一刻，以最美的身姿展现给大家。<br>&emsp;&emsp;在六楼，已经要低头俯望红棉树。“万紫千红总是春”，红棉树上，每一根枝条上，开满了千朵万朵红棉，到火红的花海，骄傲地挺立，这就是它们的舞台。四周绿树环绕，却起不到遮拦的作用，反而衬托出它们的艳丽。这不同于那几棵人工栽培的红棉树，那些树即使没有任何遮拦，也引不起注意，之上，枝条上零散的几簇红棉，如同快要凋零。<br>&emsp;&emsp;这是红棉的美，大自然所孕育，时间的锤炼，风雨的打磨，才早就了这么一件佳作，无所代替的。</p>
+<p align="right">2021年4月19日</p>
+
+<h1 id="桂花糕"><a href="#桂花糕" class="headerlink" title="桂花糕"></a>桂花糕</h1><p><strong>李俊莹</strong></p>
+<p>&emsp;&emsp;我从不必留意何时桂花会开，因为到了花季时它的香气便被风轻柔地带到每个角落，有时出门回来忽地嗅到一阵幽柔清爽的芳香，不需看过便可知桂花已盛开。路过花丛偶然一瞥，忽见那大片圆润丰厚染着墨绿光泽半圆叶片下藏着的黄色小花。桂花花瓣小小的簇拥成一大球一大球，每一瓣都珠圆玉润，却羞答答地，像个体态丰腴的小姑娘。<br>&emsp;&emsp;每至这个时候，我都偷偷数着日子等着奶奶做桂花糕，馋的。奶奶的桂花糕是最独一无二的，它不仅品相极佳。糕身好似那上等的羊脂白玉，色泽温润，呈奶白色，上面点缀着桂花，或黄或褐。这可是有讲究的，黄多施一分则太亮，褐多施一分则过沉，而这看似随手铺上的桂花实则是点睛之笔，无论从色香味哪方面来讲都是，只要稍微靠近，桂花的清甜和椰奶的奶香便扑面而来，清与腻调和到一个平衡上，那是翻涌着的，清脆的独树一帜甜。<br>&emsp;&emsp;色相绝，它的味道更绝。<br>&emsp;&emsp;等待无疑是最恼人的，刚端来的桂花糕热腾腾地，且未完全凝固，此刻我最能体会到公子宋见鳖而不见食之苦。一会儿是哥哥试探着糕点的温度，一会儿是我对着它咽口水，食指大动……<br>&emsp;&emsp;终于，我迫不及待地直接用手抓起一大块塞入嘴里，微温的特制流心入口即化，裹挟着奶香与桂花香淌入口腔，如水般温婉轻柔地满过齿舌，浓烈得如香气炸弹般的花香瞬间充盈着，交织着，仿佛将你带人那在阳光下洋溢着一片暖色的浅黄花海……<br>&emsp;&emsp;此等美味，外头是买不到的，在我吃的所有糕点中，它是最好的，是无论吃多少都不会厌的唯一，是回到家里奶奶给我的惊喜，是每次意犹未尽地盯着盘中糕时奶奶宠溺的眼神。</p>
+<p align="right">2021.3.</p>
+
+<h1 id="夜声"><a href="#夜声" class="headerlink" title="夜声"></a>夜声</h1><p><strong>何惠妍</strong></p>
+<p>&emsp;&emsp;我躺在床上听着老城区奏的安眠曲。<br>&emsp;&emsp;窗外很安静,是在城市中很难拥有的。因为老小区很多都是老人，晚上睡得早，已经在静夜入眠。<br>&emsp;&emsp;忽然有些车辆驶过,乐曲才拥有了点点起伏。那些马达声，车轮与水泥地面的摩擦声像是是乐曲中的高音符，高亢的,快速的。<br>&emsp;&emsp;慢慢地车声渐渐停下，乐曲又迎来另一波的高潮。是那些劳动了一天的人在喝酒谈笑,在寂静的老城区它们有点兴奋，有点高亢，但不如车声那般热情。只是那种在夜里才能听到的吵闹声。<br>&emsp;&emsp;吵闹声渐渐静下，夜也慢慢深了。老城市有恢复独有的平静，只能到风声和家里挂钟的转动声<br>&emsp;&emsp;我伴随着这老城区去奏的安眠曲平静地睡去。</p>
+<p align="right">2021.3.</p>
+
+<h1 id="看见春天"><a href="#看见春天" class="headerlink" title="看见春天"></a>看见春天</h1><p><strong>冯子桐</strong></p>
+<p>&emsp;&emsp;“等闲识得东风面，万紫千红总是春”。春回大地，万物复苏，花儿争先盛，争奇着艳。春天正是百花争妍的季节，繁花似锦，南海里水镇的梦里水乡百花园就是一个能看得见春天的好地方。<br>&emsp;&emsp;一走进大门，首先映入眼帘的是《梦里水乡百花园》这几个醒目大字，接着是一条蕴含古朴风格的长廊，长廊装饰得十分精致。在长廊中，抬头往上看，各种颜色鲜艳的油纸伞就带给我视觉冲击。油纸伞虽已从我们的时代褪去，但到了现代仍没有失去原来的古风美。微风轻柔地拂过你的脸，它仿佛引领你迈进梦幻的花的世界。<br>&emsp;&emsp;“儿童急走追黄蝶，飞入菜花无处寻。”大片大片的油菜花会瞬间吸引你的目光。油菜花已经长到我的肩膀那般高了，鹅黄色的油菜花一望无际，像璀璨的星河一般。又像挂在空中的金黄色毯子，和风习徐，油菜花随风摇摆，犹如碧波荡漾。走近仔细看，油菜花的叶子呈青绿色，细细长长，整整齐齐，花瓣纹路清晰得像被精心雕刻出来似的。黄色的花瓣围绕着花蕊，芳香在你不经意间钻进你的鼻子，香气纯朴而天然，让人心旷神怡。<br>&emsp;&emsp;百花园里还有各种各样的花，其中海棠一点也不比油菜花差。有的犹如一位亭亭玉立的仙女，蝴蝶被它的盛世美颜所吸引；有的犹如一个天真烂漫的小女孩，毫不羞涩地将自己最纯洁无邪的笑容展示给大家欣赏；有的犹如舞者翩翩起舞，摆着自己独特而又婀娜的舞姿。有手轻轻触摸它的花瓣，柔软、嫩滑，像被涂了一层厚厚的蜡。<br>&emsp;&emsp;除了油菜花和海棠之外，还有小伞一般的蒲公英、姹紫嫣红的千日红、娇艳欲滴的醉蝶花、艳丽动人的玫瑰……让人赏心悦目。周围的人们情不自禁地赞叹道：“真美！我们在这儿拍照吧！”“这朵花真好看！”不仅是人们，连鸟儿都在欢呼，在枝头上叽叽喳喳地演奏着春天的曲子。<br>&emsp;&emsp;我依依不舍地离开百花园。其实，不仅是那里能看见春天，只要仔细观察，我们就能看见春天！</p>
+<p align="right">2021年3月21日</p>
+
+<h1 id="且以优雅过一生"><a href="#且以优雅过一生" class="headerlink" title="且以优雅过一生"></a>且以优雅过一生</h1><p align="right">——读《杨绛传》有感</p>
+
+<p><strong>何卓盈</strong></p>
+<p>&emsp;&emsp;“不乱于心，不困于情；不畏将来，不念过往。”她完美地诠释了这句话。偶然看到一篇关于她的文章，我便深深被这位恬淡又伟大的女子所吸引，于是我买来了《杨绛传》。想要深入了解她。<br>&emsp;&emsp;这本书是杨绛先生的真实传记，描述了一个风尘仆仆的女子从不谙世事到与世无争的10年历程。<br>&emsp;&emsp;书中令我最印象深刻的情节既不是她在清华的日子，也不是她对“一个不幸者的愧诈”，而是“三反”运动中，她被迫参加“酝酿会”，却被一个陌生学生侮辱。她不为自己辩解，但心中很不是滋味，不过她很快释然了，继续笑对浮生。是的，人生充满了未知，就如同她自己说的：“人的一生始终如飘在风中的一片风絮。”风絮随风飘落，谁又知道老天会把她安排在哪呢？它在这浩瀚中是那么渺小无力。但这正是我最敬佩她的一点。她不是不会伤心，只是不会只记住过去的“坏事”。若换作是我，绝没有如此自然。<br>&emsp;&emsp;想起我的一次表演。也许是紧张过度，在舞台上的表现很不自然，到高音部分还破音了。我顿时羞愧难当，恨不得钻到地缝里。可是表演完毕，却没有一人嘲笑我，大家还是若无其事地生活。可是每当我想起这事始终觉得这是一件丢脸的事，难以释怀。但是杨绛先生告诉我一句话“我们曾如此期盼外界的认可，到最后才知道：世界是自己的，与他人毫无关系。”的确，其实生活中真的没有那么多人在意你，把自己看的太重要活的会更累。越是纠结放不下的，越会成为你的心魔。自己的人生如何，永远是自己决定的。像杨绛这般淡泊的人生态度，越是能磨练一个人的从容优雅。<br>&emsp;&emsp;杨绛先生的一生，没有人能评价她是否幸运。但对她来说，尽管她母亲早逝、曾被剃“阴阳头”，也都不算什么，她满足于自己美满的家庭。触摸《杨绛传》，感受这用文字缝制的岁月，她仿佛就在我身边，风雨的洗刷，时光的流逝，都无法磨只她恬淡的处世风度和那种浑身散发的优雅的书香气息。        她之所以吸引我，也许是因为我的身边（包括自己）都没有人能真正的“沉下心来”，不因琐事怨天尤人，也不因磨难以泪洗面。<br>&emsp;&emsp;我知道自己还没能参悟杨绛的人生，但我深刻地明白，她的思想，绝对是每个时代不变的时尚；她的气质，将会是永不泯灭的光芒；她，且以优雅过一生的她会是我永远的偶像。愿这位仙逝的老人，不再经历苦难，也愿她的灵魂永远长存人间。《杨绛传》，一本使我受益终身的书籍。</p>
+<h1 id="让挫折倒在脚下"><a href="#让挫折倒在脚下" class="headerlink" title="让挫折倒在脚下"></a>让挫折倒在脚下</h1><p align="right">——读《简·爱》有感</p>
+
+<p><strong>谭雨晴</strong></p>
+<p>&emsp;&emsp;雏鹰一层层跌落，又一次次奋飞，才能成为搏击长空的雄鹰；毛毛虫被蛹束缚，却一次次挣扎，才锻炼出有力的翅膀，成为绚丽的蝴蝶；人在一次挫折中不断拼搏，才能成为独当一面的强者。这种不畏挫折的精神，令我想到简·爱。<br>&emsp;&emsp;简·爱是美国夏洛蒂·勃朗特的《简·爱》中的女主角。她自幼父母双亡，被寄养在舅妈家里，舅妈一点儿也不喜欢她，纵容自己的儿子欺负和虐待她，但简·爱坚强地挺了过来。后来，她被送进了慈善学校，在学校里，她吃不饱，穿不暖，还被当众诬蔑，但她并没有因此放弃学习，正是因为这些挫折，她成长为一个知识渊博，有思想和人格魅力的人。她打败了挫折，最终获得了幸福的爱情。<br>&emsp;&emsp;纵观古今，那些大有成就的人大多都经历了一番挫折。勾践卧薪尝胆的故事，众所周知。越王勾践在吴国不仅要看坟、喂马，还要服侍吴王夫差上厕所。有一次，夫差生了病，勾践亲自去尝他的粪便，对他说：“恭喜大王，你的病就快好了。”原因就是不治之便苦，可治之便甜。此事后，夫差放松了对勾践的戒心，甚至把他放回了越国，勾践为了铭记这番挫折，卧薪尝胆，最终灭了吴国报了仇。<br>&emsp;&emsp;只有战胜了挫折，才能获得最后的成功。我们每个人都应具有一种无畏挫折的精神，让挫折倒在脚下。挫折是阻挡弱者的大山，是冶炼强者的熔炉，更是砥砺锋芒的磨刀石。我们应该通过挫折来磨练自己，磨练出自己的真实才干，磨练出自己的坚强意志。挫折就像一位导师，教会我们人生的道理，到了我们走向正确的道路。挫折又是一笔宝贵的财富，丰富了我们的人生阅历。不经历风雨，怎见彩虹？<br>&emsp;&emsp;我坚信，挫折是可以战胜的。对挫折say no，让挫折倒在脚下！</p>
+<h1 id="雨"><a href="#雨" class="headerlink" title="雨"></a>雨</h1><p><strong>王慧昕</strong></p>
+<p>&emsp;&emsp;“哗啦啦……”一场大雨令我措不及防，我赶紧在小包里翻找，希望能找出一把雨伞。但理想很美好，现实却很残酷，这个扁扁的小包里没有雨伞。<br>&emsp;&emsp;我站在小店里，看着行色匆匆的人们。大风将树刮的东倒西歪，没有雨伞的人在雨中狂奔，找到遮雨的地方就停下来避雨，雨势一小 就赶紧走了。我看雨小了，就跑了出去。刚跑没多久，雨又下了起来。我不得不停下脚步，找到一个地方遮雨。<br>&emsp;&emsp;雨越下越大，吞噬了在雨幕中的人们。我看到一个父亲背着他的女儿在街上行走。小女孩撑着把伞，她转动手中的伞，无数个小雨滴从伞上滑落，蹦跳着跌到衣服上，地上。女孩不知跟她的父亲说了什么，两人都裂开嘴笑了。然后那位父亲背着女孩一点一点地消失在了我的视野里。<br>&emsp;&emsp;雨稍微小了一点。我转移了另一个地方躲雨，在这个棚子里，雨滴落的声音被无限放大，占据了我的听觉。“呜呼！”一声欢呼进入我的耳朵，我闻声寻去，看见几个年轻人在雨中骑着电动车，丝毫不顾雨打湿在身上，就像那句谚语：明知山有虎，偏向虎山行。趁着年轻，大胆地拼搏，享受着自由。<br>&emsp;&emsp;雨渐渐的停了。世界又重新亮了起来。雨，就像一个小插曲，在这个世界这个巨大的舞台上上演着自己的美。雨哇，雨，真是令人抓狂又着迷。</p>
+<p align="right">2021.5.5</p>
+
+<h1 id="对生活的勇气"><a href="#对生活的勇气" class="headerlink" title="对生活的勇气"></a>对生活的勇气</h1><p align="right">——读《平凡的世界》有感</p>
+
+<p><strong>孟东杨</strong></p>
+<p>&emsp;&emsp;在父亲的引导下，我怀着好奇心翻开了这部《平凡的世界》。<br>《平凡的世界》是以70到80年代为故事背景，一以孙少安和弟弟孙少平为主要人物。其中讲述了许多不同阶级的人物故事。描绘出了一副充满浓浓的陕北气息的生动画卷。<br>&emsp;&emsp;在这部书中，孙少安和孙少平有两种截然不同的人生。但是他们的爱情道路却截然相似。孙少安小时候学习好，曾以全县第三名有机会进入初中，但是由于家里太穷，他放弃了读书的机会选择帮助父亲扶持家里的光景。这也使得他与他一直爱着的人田润叶被迫分离。后来他们又相遇了，虽然彼此深爱的人但是由于年代和家庭缘故最终未能走到一起。后来，改革开放，他便办起了烧砖厂。而孙少平的学历到了高中，但是动荡的文革使得他没有机会进入大学的校门，后来在村中的中学当起了老师。最后学校搬走，他也“失业”了。他不甘于待在双水村中，一心决定出去闯荡，打算在黄原打小工。在黄原城中遇见了高中时的好朋友田晓霞，两人的感情愈来愈深。孙少平后来在田晓霞的帮助下，到了河南当煤矿工人。在田晓霞和孙少平在热恋之中时，田晓霞为了就灾区的难民光荣牺牲，孙少平十分悲痛。后来，在矿上作业时，为了救徒弟而毁掉了自己的容颜。<br>&emsp;&emsp;相比之下，我其实更加喜欢孙少平。一个农村小子，有勇气和魄力去到人生地不熟的城中打拼，不安逸与家中愈来愈好的光景，这令我不禁感到佩服。我想起一句话，叫做“世界那么大，我想去看看”。每个人，在年轻的时候都抱有一颗炽热和躁动的心，对于外面世界的向往和好奇。我也像孙少平一样，对于世界充满了无限好奇。我很喜欢去广州，那是中国的一线城市之一。我对于大城市十分向往，也希望可以通过自己的努力，获得进入那座城市的“门票”。书中的孙少平，起初到城里时，对于自己的归处感到迷茫和惆怅。他只是每天的去打小工，就算再辛苦，再累，他也坚持不回去，他下定决心要在这座城市中立足，成为一个“城里人”。·他这种对于生活的倔强和不向命运屈服的精神，深深打动了我，人正是有这一种不服输的精神。每当我的比赛失利，我心灰意冷，但是我并不自暴自弃，决心更加努力。每次我考试考砸，我郁郁寡欢，但是我并没有因此沉沦，决心振作精神。就如我这次的一段考，我从年级的50多名，直线下滑到了128名。这是我从未想到过的。成绩公布，我少不了同学之间的嘲笑和冷落。虽然我很伤心，但是我不想放弃，我要努力，赶超回去。也怀着这种倔强和劲头，这种不服输的精神，一直激励这我。<br>&emsp;&emsp;《平凡的世界》这本小说深深打动了我，孙少安的责任心、孙少平的勇气、田润叶的善良、田晓霞的大方……。书中种种的人物品格无一不影响着我。让我对生活充满了好奇和信心。对于生活的倔强和勇气，让我砥砺前行。<br>&emsp;&emsp;我合上了书，看向远方，对于未来，我充满期待！</p>
+<h1 id="男子篮球赛"><a href="#男子篮球赛" class="headerlink" title="男子篮球赛"></a>男子篮球赛</h1><p><strong>N/A</strong></p>
+<p>&emsp;&emsp;这几周的体育课上，我观察了我们班男生的几场篮球赛，意外发现几位打篮球派别的代表人物。</p>
+<h4 id="多姿型-王子洋"><a href="#多姿型-王子洋" class="headerlink" title="多姿型-王子洋"></a>多姿型-王子洋</h4><p>&emsp;&emsp;他眼神坚定，望着篮框确定目标向前冲。见到有人冲了过来试图拦截他，便开始了他的“show time”。只见他臀部往右边扭去，身子向左倾斜撞开敌人，左脚向右迈，右脚向左跨，像在跳一支美丽的舞蹈，一只手拍着球一只手伸直阻挡敌人，一路狂奔对其他人视而不见。好不容易来到篮筐下，奋力一投，可惜球被敌人一巴掌拍下，也是白费了刚刚精彩的走位。</p>
+<h4 id="搞笑型-关子铭"><a href="#搞笑型-关子铭" class="headerlink" title="搞笑型-关子铭"></a>搞笑型-关子铭</h4><p>&emsp;&emsp;球落在了他的手上，他十分得逞，露出他十二颗洁白的牙齿，满面春光，开始他的表演。左腿向前伸，秀出自己的“大长腿”，脚尖点着地面，摩擦摩擦，发出了铃铛般的笑声。当球落在了敌方球员的手中时，他便热情前去给他一个深情拥抱，还要发出“啊啊啊”的激动叫声，让人猝不及防感受到温暖。</p>
+<h4 id="有样无力型-付磊磊"><a href="#有样无力型-付磊磊" class="headerlink" title="有样无力型-付磊磊"></a>有样无力型-付磊磊</h4><p>&emsp;&emsp;别看他身子虽然不壮，可当他自信起来，一切外界因素都与他毫不相干，丝毫不影响他的心情。有模有样地跑到三分线，嘴上挂着自信的笑容，好像在说:“是时候展现真正的技术了！”360°转身躲过敌人，确认时间，往下一蹲、一跳，投出篮球，篮球在空中划过，多么华丽的弧线，直奔篮筐。恭喜——球完美地从篮筐下飞过，差点砸到一旁的同学，吓得他们慌忙跑开。<br>&emsp;&emsp;虽然技术有待提高，但我相信只要有一颗热爱篮球的心，有志者事竟成。运动起来吧，同学们！</p>
+<h1 id="惬意的饭后时光"><a href="#惬意的饭后时光" class="headerlink" title="惬意的饭后时光"></a>惬意的饭后时光</h1><p><strong>罗湛纯</strong></p>
+<p>&emsp;&emsp;坐在操场旁的阶梯上，伴着清凉的微风，吃着饭，不一会儿，饭吃完了，处理了一下饭盒与剩菜后，背起水壶便开始了我的饭后旅行。<br>&emsp;&emsp;旅行的第一站便是蝴蝶园。我踏进蝴蝶园便看见几只蝴蝶从草丛中飞了起来，向我飞来，仿佛是在欢迎我的到来，我跟随着她们的脚步漫步在蝴蝶园中，看着蝴蝶们美丽的身姿，感受着阳光的沐浴，闻着花朵和小草芳香的气息，这让我感到无比的惬意。在蝴蝶园里走了几圈后我便在蝴蝶园的出口回首告别，开始向下一站出发。<br>&emsp;&emsp;旅行的第二站，也是最后一站，是春晖园。走进春晖园，扑面而来的花草香，身边树木的“沙沙”声，鸟儿在树叶间跳动的身姿，无不让我感受到了轻松惬意。再向里面走，一会儿，我到了两棵小树前，用手拨开它们，便看到了我们班的那盆绿萝，那盆曾经生命垂危的绿萝在我和李俊莹的精心照顾下，重获新生，拿回了他原本的翠绿色。我为他浇了些水后便继续走了起来，走到春晖园的走廊上，我听见旁边走廊下面空地上初一级的同学玩游戏的欢笑声，我便饶有兴趣的坐在走廊上，侧着身子看着他们玩。吹着微风，伴着稍稍的饱腹感，静静的做一名观众看着他们玩，我不禁感叹到：“这是多么惬意的饭后时光啊！”<br>&emsp;&emsp;随着一阵音乐声响起，我便知道我要走了，我依依不舍的告别了春晖园，告别了这惬意的时光，向着午间休息室走去了。</p>
+<h1 id="一位哲学家眼中的竞技世界"><a href="#一位哲学家眼中的竞技世界" class="headerlink" title="一位哲学家眼中的竞技世界"></a>一位哲学家眼中的竞技世界</h1><p align="right">——读《有限与无限的游戏》有感</p>
+
+<p><strong>N/A</strong></p>
+<p>&emsp;&emsp;“世界上至少有两种游戏，一种可称为有限游戏，另一种称为无限游戏。有限游戏以取胜为目的，在边界内游戏，规则是对参与者的限制。”以体育竞赛为例，大家应该都了解过足球。四年一度的足球世界杯，参赛者来自全球各地，他们都只有一个目标——夺冠。虽然说每支队伍都对自身实力水平有一定的认识，但是他们仍会尽可能取得尽量靠前的排名。无疑，足球场有着标准的尺寸大小，标准的比赛时间是90分钟，至于规则，就不用多说。  在书的开篇，作者以十分精炼的语言将世界上其中一类竞技游戏的特点概括出来。为了赢得比赛，参与者将技巧训练的十分熟练，以至于在一开始游戏就似乎结束了。</p>
+<p>&emsp;&emsp;“由于有限游戏旨在达成一个结果。剧本和情节似乎都并非事先写好，但我们总能回首成功之路，发现胜利者显然知道如何行动。”其实联系生活，我们很容易就能发现，其中充满着有限游戏，小到考试、辩论，大到军备竞赛……学校为提高自身知名度而培训出优质的学员送往名校，“从这个意义上说，学校是有限游戏的一种”。正如现在许多对教育的批评，教育不应该只关注考试。教育的本质是让一个人发现自己，而非拿取更高等的证书，为进入更上层的社会做保障。的确，有关学校体制的改革，在国内外都有。再反观一下现在的教育，考试或许只是手段，而不是目的？我们是否能以另一种角度看待课内学习？我想这正是哲学教给我的——换种角度看问题。</p>
+<p>&emsp;&emsp;“有限游戏的所有限制都是自我限制。”读到这句话时，我稍微有点震惊，我难道不是必须得做某些事吗？细想，不难发现，我们随时都拥有选择的“权利”。而所谓的“必须”“强制性”都是我们忘记了自己的自由。只有我们逼迫自己相信它是强制性的，它才能成为强制性的。</p>
+<p>&emsp;&emsp;“艺术家并不是创造艺术对象，而是通过艺术对象来创造。”初读此话，可能觉得拗口，细想后发现，这句话一针见血。何为艺术？《蒙娜丽莎》？《最后的晚餐》？《欢乐颂》？这些都是艺术作品，而艺术蕴藏其间。更准确地说，“艺术是可能性，除非在旁观者产生创造力，否则艺术不成为艺术”。艺术是惊奇，当你看到我写的这段话而有所触动时，这便是艺术。“艺术并不止藏在艺术作品里，艺术创作可以在任何地方找到地上，事实上，也只能在任何地方找到它，人们必须被他所惊讶。”作者在此似乎重新定义了艺术，事实上，他只是带我们重新找回了艺术。</p>
+<p>&emsp;&emsp;<strong>……</strong></p>
+<p>&emsp;&emsp;这本书我读过两遍，刚读时，似懂非懂。读第二遍时，方才发觉出其价值所在。读到某些短句时，我会有种莫名的兴奋感，那些文字所蕴含的道理，直击心灵深处，没有丝毫做作，读完后有种恍然大悟之感，眼前的世界似乎大了。我十分清楚自己并没有读透此书，其中最核心的密码依旧没有破解。</p>
+<p>&emsp;&emsp;也许好的书都有一个共同点——百读而不厌。这本《有限与无限的游戏》本身是偏离主流文化的——“爱国主义在本质上是好斗的”“只有通过自主的自我蒙蔽，人们才能相信，他们之所以遵守法律，乃是因为法律是强制性的”。但正如书中所说——“越轨是文化的本质，越轨的性质各有不同，不是所有对过去的偏离都具有文化上的意义。给传统了带来新的思维方式，使我们对一度熟悉的事物产生陌生感，对我们拥有的一切进行再审视，这样做才是有意义的。”</p>
+<p>&emsp;&emsp;我想，卡斯教授写这本书的目的并不在于让我们放弃奋斗或是学习。相反，他以一位历史教授的眼界带我们重新审视了一遍这个世界。它启迪我们要放眼更广阔的世界，不被时代所惑，不被社会惯性所扯。我们要更加努力地奋斗，因为“奋斗即文化本身”；更加勤奋地学习，因为“教育揭示出过去的越来越丰富的东西，教育引导人走向不断的自我发现，将未完成的过去延续到未来”。那些未知的奥秘，等待着我们去探索；那些已知的事物，等待着我们去学习。</p>
+<p>&emsp;&emsp;可以说这本书是抛砖引玉式的邀请。我也十分希望读完我这篇读后感的人，同样拿起此书。但或许就如周敦颐写道:莲之爱，同予者何人？牡丹之爱，宜乎众矣！</p>
+
+    </article>
+    <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://amlkiller.github.io">amlkiller</a>
+            <p>原文链接：<a href="https://amlkiller.github.io/posts/a2ba6acf/">https://amlkiller.github.io/posts/a2ba6acf/</a>
+            <p>发表日期：<a href="https://amlkiller.github.io/posts/a2ba6acf/">April 12th 2021, 12:00:00 am</a>
+            <p>更新日期：<a href="https://amlkiller.github.io/posts/a2ba6acf/">August 31st 2021, 11:10:37 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/posts/e5419a0f/" title="优秀作文-初二下一段">
+                    <div class="nextTitle">优秀作文-初二下一段</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/posts/4b7e8252/" title="音乐视频测试">
+                    <div class="prevTitle">音乐视频测试</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
+
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+            
+
+        </div>
+    
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
+    
+</main>
+
+                <!-- profile -->
+                
+            </div>
+            <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+        <div class="social">
+            
+    
+        
+            
+                <a href="mailto:2087663148@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="https://github.com/amlkiller" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+            
+                <span class="iconfont-archer qq" title=qq>
+                    
+                    <img class="profile-qr" src="https://pic.baixiongz.com/uploads/2021/04/19/10aa095b3aef2.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://space.bilibili.com/319764854" class="iconfont-archer bilibili" target="_blank" title=bilibili></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+        </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- website approve for Chinese user -->
+    
+    <!-- 不蒜子  -->
+    
+        <div class="busuanzi-container">
+            
+             
+                <span id="busuanzi_container_site_pv">访问次数: <span id="busuanzi_value_site_pv"></span> 次</span>
+            
+        </div>
+    	
+</footer>
+
+        </div>
+        <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%8E%E9%9A%BE%E8%80%8C%E4%B8%8A%EF%BC%8C%E4%B8%8D%E8%B4%9F%E9%9F%B6%E5%8D%8E"><span class="toc-number"></span> <span class="toc-text">迎难而上，不负韶华</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E5%85%89%E8%8A%92"><span class="toc-number"></span> <span class="toc-text">被忽略的光芒</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B8%B8%E5%9C%A8%E8%BA%AB%E8%BE%B9"><span class="toc-number"></span> <span class="toc-text">物理常在身边</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%80%9C%E4%BB%8E%E5%A4%A9%E8%80%8C%E9%99%8D%E2%80%9D%E7%9A%84%E5%B9%B8%E8%BF%90"><span class="toc-number"></span> <span class="toc-text">“从天而降”的幸运</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%83%E6%80%81%E6%B8%B8%E6%88%8F"><span class="toc-number"></span> <span class="toc-text">心态游戏</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%98%A5%E9%9B%A8"><span class="toc-number"></span> <span class="toc-text">春雨</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%87%EF%BC%8C%E5%A5%BD%E9%A6%99"><span class="toc-number"></span> <span class="toc-text">哇，好香</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%81%AB%E7%BA%A2%E7%9A%84%E8%AE%B0%E5%BF%86"><span class="toc-number"></span> <span class="toc-text">火红的记忆</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%82%E8%8A%B1%E7%B3%95"><span class="toc-number"></span> <span class="toc-text">桂花糕</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9C%E5%A3%B0"><span class="toc-number"></span> <span class="toc-text">夜声</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9C%8B%E8%A7%81%E6%98%A5%E5%A4%A9"><span class="toc-number"></span> <span class="toc-text">看见春天</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%94%E4%BB%A5%E4%BC%98%E9%9B%85%E8%BF%87%E4%B8%80%E7%94%9F"><span class="toc-number"></span> <span class="toc-text">且以优雅过一生</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A9%E6%8C%AB%E6%8A%98%E5%80%92%E5%9C%A8%E8%84%9A%E4%B8%8B"><span class="toc-number"></span> <span class="toc-text">让挫折倒在脚下</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%A8"><span class="toc-number"></span> <span class="toc-text">雨</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E7%94%9F%E6%B4%BB%E7%9A%84%E5%8B%87%E6%B0%94"><span class="toc-number"></span> <span class="toc-text">对生活的勇气</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%B7%E5%AD%90%E7%AF%AE%E7%90%83%E8%B5%9B"><span class="toc-number"></span> <span class="toc-text">男子篮球赛</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E5%A7%BF%E5%9E%8B-%E7%8E%8B%E5%AD%90%E6%B4%8B"><span class="toc-number">0.1.</span> <span class="toc-text">多姿型-王子洋</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%9E%E7%AC%91%E5%9E%8B-%E5%85%B3%E5%AD%90%E9%93%AD"><span class="toc-number">0.2.</span> <span class="toc-text">搞笑型-关子铭</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E6%A0%B7%E6%97%A0%E5%8A%9B%E5%9E%8B-%E4%BB%98%E7%A3%8A%E7%A3%8A"><span class="toc-number">0.3.</span> <span class="toc-text">有样无力型-付磊磊</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%83%AC%E6%84%8F%E7%9A%84%E9%A5%AD%E5%90%8E%E6%97%B6%E5%85%89"><span class="toc-number"></span> <span class="toc-text">惬意的饭后时光</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E4%BD%8D%E5%93%B2%E5%AD%A6%E5%AE%B6%E7%9C%BC%E4%B8%AD%E7%9A%84%E7%AB%9E%E6%8A%80%E4%B8%96%E7%95%8C"><span class="toc-number"></span> <span class="toc-text">一位哲学家眼中的竞技世界</span></a>
+            </div>
+        
+        <!-- sidebar -->
+        <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+        <div class="sidebar-panel-archives">
+    <!-- 在 ejs 中将 archive 按照时间排序 -->
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 18
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+        
+            
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span>
+            <a class="archive-post-title" href="/posts/d1abe2af/">中考真题「这样多美丽」</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span>
+            <a class="archive-post-title" href="/posts/c02709ca/">作文集锦「阅读 亲情 抗疫」</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span>
+            <a class="archive-post-title" href="/posts/7471d5a7/">API Photos Repository(SFW-Anime)</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span>
+            <a class="archive-post-title" href="/posts/5100ca70/">服务器在线人数查询</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span>
+            <a class="archive-post-title" href="/posts/fcd2f60/">收集的API</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/10</span>
+            <a class="archive-post-title" href="/posts/6faaa453/">快速部署软件列表</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/02</span>
+            <a class="archive-post-title" href="/posts/3db43fb3/">作文-遇见</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/26</span>
+            <a class="archive-post-title" href="/posts/2992454b/">Google dino patches</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span>
+            <a class="archive-post-title" href="/posts/b35095ea/">动态内容测试</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span>
+            <a class="archive-post-title" href="/posts/29d7ec04/">流浪地球</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/19</span>
+            <a class="archive-post-title" href="/posts/b6ed33af/">AI唱歌教程与演示</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/14</span>
+            <a class="archive-post-title" href="/posts/f54jg458/">共青团入团指南</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span>
+            <a class="archive-post-title" href="/posts/e5419a0f/">优秀作文-初二下一段</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span>
+            <a class="archive-post-title" href="/posts/a2ba6acf/">周记好作文-word</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/09</span>
+            <a class="archive-post-title" href="/posts/4b7e8252/">音乐视频测试</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/04</span>
+            <a class="archive-post-title" href="/posts/3b319594/">傅雷家书的一些笔记</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span>
+            <a class="archive-post-title" href="/posts/f1f6fe95/">杜玥璃概念设计</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 1955 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/24</span>
+            <a class="archive-post-title" href="/posts/3d0da172/">诞生</a>
+        </li>
+    
+    </div>
+</div>
+
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+        
+            <span class="sidebar-tag-name" data-tags="AI">
+                <span class="iconfont-archer">&#xe606;</span>
+                AI
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="photos">
+                <span class="iconfont-archer">&#xe606;</span>
+                photos
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="API">
+                <span class="iconfont-archer">&#xe606;</span>
+                API
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="Anime">
+                <span class="iconfont-archer">&#xe606;</span>
+                Anime
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="games">
+                <span class="iconfont-archer">&#xe606;</span>
+                games
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="作文">
+                <span class="iconfont-archer">&#xe606;</span>
+                作文
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="初二下学期">
+                <span class="iconfont-archer">&#xe606;</span>
+                初二下学期
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="傅雷家书">
+                <span class="iconfont-archer">&#xe606;</span>
+                傅雷家书
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="共青团">
+                <span class="iconfont-archer">&#xe606;</span>
+                共青团
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="computer">
+                <span class="iconfont-archer">&#xe606;</span>
+                computer
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="MC">
+                <span class="iconfont-archer">&#xe606;</span>
+                MC
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="杜玥璃">
+                <span class="iconfont-archer">&#xe606;</span>
+                杜玥璃
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="novel">
+                <span class="iconfont-archer">&#xe606;</span>
+                novel
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="刘慈欣">
+                <span class="iconfont-archer">&#xe606;</span>
+                刘慈欣
+            </span>
+        
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+        缺失模块，请参考主题文档进行安装配置：https://github.com/fi3ework/hexo-theme-archer#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+
+    </div>
+</div>
+
+        <!-- site-meta -->
+        <script>
+    var siteMetaRoot = "/"
+    if (siteMetaRoot === "undefined") {
+        siteMetaRoot = '/'
+    }
+    var siteMeta = {
+        url: "https://amlkiller.github.io",
+        root: siteMetaRoot,
+        author: "amlkiller"
+    }
+</script>
+
+        <!-- import experimental options here -->
+        <!-- Custom Font -->
+
+
+        <!-- main func -->
+        <script src="/scripts/main.js?v=20210823"></script>
+        <!-- dark mode -->
+        <script src="/scripts/dark.js?v=20210823"></script>
+        <!-- fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+        <!-- algolia -->
+        
+        <!-- busuanzi -->
+        
+            <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+        
+        <!-- CNZZ -->
+        
+        <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20210823" async></script>
+        
+        <!-- mermaid -->
+        
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

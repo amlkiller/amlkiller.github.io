@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <!-- title -->
+
+
+    
+
+<!-- keywords -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="amlkiller">
+    <meta name="renderer" content="webkit">
+	<meta name="referrer" content="no-referrer">
+    <meta name="copyright" content="amlkiller">
+    
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="序一些作文集锦 「阅读 亲情 抗疫」 阅读类墨香徘徊依旧&amp;emsp;&amp;emsp;雨夜，茶香袅袅，古朴的钟摆轻叩着木质的钟壁，清脆的金属声敲击着时光的点点滴滴，千年的过客撷来冷月，编织馨香的巾绢，为你擦亮迷离的双眼，去发现尘封于天地间的千古华章。指腹轻轻地划过每一缕飘逸潇洒的字迹，手起笔落间，过往的沉浮起落镌刻进柔软的宣纸里，漫步于平平仄仄的诗林中，轻嗅着唐风宋韵里亘古不变的浓郁墨香，找寻那难以磨灭">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作文集锦「阅读 亲情 抗疫」">
+<meta property="og:url" content="https://amlkiller.github.io/posts/c02709ca/index.html">
+<meta property="og:site_name" content="amlkiller&#39;s studio.">
+<meta property="og:description" content="序一些作文集锦 「阅读 亲情 抗疫」 阅读类墨香徘徊依旧&amp;emsp;&amp;emsp;雨夜，茶香袅袅，古朴的钟摆轻叩着木质的钟壁，清脆的金属声敲击着时光的点点滴滴，千年的过客撷来冷月，编织馨香的巾绢，为你擦亮迷离的双眼，去发现尘封于天地间的千古华章。指腹轻轻地划过每一缕飘逸潇洒的字迹，手起笔落间，过往的沉浮起落镌刻进柔软的宣纸里，漫步于平平仄仄的诗林中，轻嗅着唐风宋韵里亘古不变的浓郁墨香，找寻那难以磨灭">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-08T13:16:17.105Z">
+<meta property="article:author" content="amlkiller">
+<meta property="article:tag" content="作文">
+<meta name="twitter:card" content="summary">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="/assets/favicon.ico">
+    
+    <title>作文集锦「阅读 亲情 抗疫」 · amlkiller&#39;s studio</title>
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+    (function (w) {
+        'use strict'
+        // rel=preload support test
+        if (!w.loadCSS) {
+            w.loadCSS = function () {}
+        }
+        // define on the loadCSS obj
+        var rp = (loadCSS.relpreload = {})
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function () {
+            var ret
+            try {
+                ret = w.document.createElement('link').relList.supports('preload')
+            } catch (e) {
+                ret = false
+            }
+            return function () {
+                return ret
+            }
+        })()
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function (link) {
+            // remember existing media attr for ultimate state, or default to 'all'
+            var finalMedia = link.media || 'all'
+
+            function enableStylesheet() {
+                link.media = finalMedia
+            }
+
+            // bind load handlers to enable media
+            if (link.addEventListener) {
+                link.addEventListener('load', enableStylesheet)
+            } else if (link.attachEvent) {
+                link.attachEvent('onload', enableStylesheet)
+            }
+
+            // Set rel and non-applicable media type to start an async request
+            // note: timeout allows this to happen async to let rendering continue in IE
+            setTimeout(function () {
+                link.rel = 'stylesheet'
+                link.media = 'only x'
+            })
+            // also enable media after 3 seconds,
+            // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+            setTimeout(enableStylesheet, 3000)
+        }
+
+        // loop through link elements in DOM
+        rp.poly = function () {
+            // double check this to prevent external calls from running
+            if (rp.support()) {
+                return
+            }
+            var links = w.document.getElementsByTagName('link')
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i]
+                // qualify links to those with rel=preload and as=style attrs
+                if (
+                    link.rel === 'preload' &&
+                    link.getAttribute('as') === 'style' &&
+                    !link.getAttribute('data-loadcss')
+                ) {
+                    // prevent rerunning on link
+                    link.setAttribute('data-loadcss', true)
+                    // bind listeners to toggle media back
+                    rp.bindMediaToggle(link)
+                }
+            }
+        }
+
+        // if unsupported, run the polyfill
+        if (!rp.support()) {
+            // run once at least
+            rp.poly()
+
+            // rerun poly on an interval until onload
+            var run = w.setInterval(rp.poly, 500)
+            if (w.addEventListener) {
+                w.addEventListener('load', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            } else if (w.attachEvent) {
+                w.attachEvent('onload', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            }
+        }
+
+        // commonjs
+        if (typeof exports !== 'undefined') {
+            exports.loadCSS = loadCSS
+        } else {
+            w.loadCSS = loadCSS
+        }
+    })(typeof global !== 'undefined' ? global : this)
+</script>
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20210823" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/dark.css?v=20210823" as="style">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/mobile.css?v=20210823" media="(max-width: 960px)">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js?v=20210823" as="script">
+    <link rel="preload" href="/scripts/dark.js?v=20210823" as="script">
+    <link rel="preload" href="/font/Oswald-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" as="font" crossorigin>
+    <!-- algolia -->
+    
+    <!-- 百度统计  -->
+    
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b41000faa4c81adedb22039a6da2e4b8";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ == undefined) {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js" />')
+        }
+    </script>
+    
+        <body class="post-body">
+    
+        <!-- header -->
+        <header class="header header-mobile">
+    <!-- top read progress line -->
+    <div class="header-element">
+        <div class="read-progress"></div>
+    </div>
+    <!-- sidebar menu button -->
+    <div class="header-element">
+        
+            <div class="header-sidebar-menu">
+        
+            
+                <div style="padding-left: 1px;">&#xe775;</div>
+            
+        </div>
+    </div>
+    <!-- header actions -->
+    <div class="header-actions">
+        <!-- theme mode switch button -->
+        <span class="header-theme-btn header-element">
+            <i class="fas fa-adjust"></i>
+        </span>
+        <!-- back to home page text -->
+        <span class="home-link header-element">
+            <a href=/>amlkiller's studio</a>
+        </span>
+    </div>
+    <!-- toggle banner for post layout -->
+    
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">amlkiller&#39;s studio</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">作文集锦「阅读 亲情 抗疫」</a>
+            </div>
+        </div>
+    
+</header>
+
+        <!-- fixed footer -->
+        <footer class="footer-fixed">
+    <!-- back to top button -->
+    <div class="footer-fixed-element">
+        
+            <div class="back-top back-top-hidden">
+        
+        
+            <div>&#xe639;</div>
+        
+        </div>
+    </div>
+</footer>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="site-intro" style="
+
+
+
+
+
+
+
+    height:50vh;
+
+">
+    
+    <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+                作文集锦「阅读 亲情 抗疫」
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+                
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="作文">作文</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">16.3k</span>阅读时长: <span class="post-count reading-time">55 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2022/05/08</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+            <script>
+  // get user agent
+  function getBrowserVersions() {
+    var u = window.navigator.userAgent
+    return {
+      userAgent: u,
+      trident: u.indexOf('Trident') > -1, //IE内核
+      presto: u.indexOf('Presto') > -1, //opera内核
+      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+      iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+      iPad: u.indexOf('iPad') > -1, //是否为iPad
+      webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+      weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+      uc: u.indexOf('UCBrowser') > -1, //是否为android下的UC浏览器
+    }
+  }
+  var browser = {
+    versions: getBrowserVersions(),
+  }
+  console.log('userAgent: ' + browser.versions.userAgent)
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded')
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document
+        .getElementsByClassName('intro-title')[0]
+        .classList.add('intro-fade-in')
+      document
+        .getElementsByClassName('intro-subtitle')[0]
+        .classList.add('intro-fade-in')
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in')
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb() {
+    if (browser.versions.uc) {
+      console.log('UCBrowser')
+      fontLoaded()
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular'],
+        },
+        loading: function () {
+          // 所有字体开始加载
+          // console.log('font loading');
+        },
+        active: function () {
+          // 所有字体已渲染
+          fontLoaded()
+        },
+        inactive: function () {
+          // 字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout')
+          fontLoaded()
+        },
+        timeout: 5000, // Set the timeout to two seconds
+      })
+    }
+  }
+
+  function asyncErr() {
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0]
+    o.src = u
+    if (cb) {
+      o.addEventListener(
+        'load',
+        function (e) {
+          cb(null, e)
+        },
+        false
+      )
+    }
+    if (err) {
+      o.addEventListener(
+        'error',
+        function (e) {
+          err(null, e)
+        },
+        false
+      )
+    }
+    s.parentNode.insertBefore(o, s)
+  }
+
+  var asyncLoadWithFallBack = function (arr, success, reject) {
+    var currReject = function () {
+      reject()
+      arr.shift()
+      if (arr.length) async(arr[0], success, currReject)
+    }
+
+    async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack(
+    [
+      'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js',
+      'https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js',
+      "/lib/webfontloader.min.js",
+    ],
+    asyncCb,
+    asyncErr
+  )
+</script>
+
+            <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+            <div class="container container-unloaded">
+                <main class="main post-page">
+    <article class="article-entry">
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\xwkblog\assets\css\APlayer.min.css"><script src="\xwkblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="序"><a href="#序" class="headerlink" title="序"></a>序</h4><p>一些作文集锦 <strong>「阅读 亲情 抗疫」</strong></p>
+<h1 id="阅读类"><a href="#阅读类" class="headerlink" title="阅读类"></a>阅读类</h1><h2 id="墨香徘徊依旧"><a href="#墨香徘徊依旧" class="headerlink" title="墨香徘徊依旧"></a>墨香徘徊依旧</h2><p>&emsp;&emsp;雨夜，茶香袅袅，古朴的钟摆轻叩着木质的钟壁，清脆的金属声敲击着时光的点点滴滴，千年的过客撷来冷月，编织馨香的巾绢，为你擦亮迷离的双眼，去发现尘封于天地间的千古华章。指腹轻轻地划过每一缕飘逸潇洒的字迹，手起笔落间，过往的沉浮起落镌刻进柔软的宣纸里，漫步于平平仄仄的诗林中，轻嗅着唐风宋韵里亘古不变的浓郁墨香，找寻那难以磨灭的一抹瑰丽。<br>&emsp;&emsp;在那抑或清婉抑或豪迈的诗词里，是诗人桀骜不羁的灵魂，抑或是他们的缱绻情思。在历史的年轮里，回想一个朝代，品味一段岁月。“滚滚长江东逝水，浪花淘尽英雄”，清幽之气清徐，那是三国的历史沉淀；“采菊东篱下，悠然见南山”，菊花高洁，那是陶渊明悠然的释怀；“红军不怕远征难，万水千山只等闲”，泥土气息氤氲，那是毛泽东指点江山，红军越过艰难……满室书香蹁跹，一颗浮躁的心洗净铅华，在安静的夜里，所有的纷繁琐事，都在那一份诗韵、一曲柔情中深藏我的心底。<br>&emsp;&emsp;巴山夜雨，西窗红烛，沉眠一般悠扬的乐韵，激起遥遥無期的惆怅，伸手触摸那些美丽而忧伤的诗句，一阵微凉的水声淹没了我的思绪。秋雨缠绵，遥远的大山深处，寂寞的客栈里，诗人倚窗远望，自己的心上人在何方？回答他的只有眼前的茫茫黑夜。雨稀稀落落地下个不停，思念如同这寒夜的雨丝，被越拉越长。“何当共剪西窗烛，却话巴山夜雨时”，多想与自己的心上人窗前紧紧相依，互诉衷肠，一起剪去西窗的烛光，相视而笑……如今却只有自己孤身一人于这千里之外，开启绵延而又哀怨的思念……秋雨如同离人的泪水，忧郁而又缠绵，早年那种炙热与真诚早已散失在窗外雨夜的苍茫里，所有的期盼，都是一个无言的结局。<br>&emsp;&emsp;“撑着油纸伞，独自彷徨在悠长，悠长又寂寥的雨巷，我希望逢着一个丁香一样的结着愁怨的姑娘”，初读此诗，便被诗人戴望舒细腻的笔触所触动。诗人撑把油纸伞，独自踯躅在寂寥的雨巷，烟雨蒙蒙，沉重的木屐踏在江南的雨季里，他并没有遇见那位丁香似的结着愁怨的姑娘。雨巷，空荡，悠长。折一片嫩叶，却捋满一树的沧桑。诗人落寞的背影点亮了谁的眼睛，又模糊了谁的风景？油纸伞在风中轻旋，斑驳的青石浮浮沉沉，刻满了历史的风霜，欲览一脉清泉，漾成心曲，化雨滴为诗，和一曲孤独的赞唱。<br>&emsp;&emsp;走走停停，寻寻觅觅，耳畔传来梦华的诗语，“凌晨四点钟，海棠花未眠”。夜的无边，还未消失殆尽，在黑夜与晨曦的边缘，我仿佛穿越千山万水，跨越时空，看到诗人一袭单衣，俯眼低眉，轻嗅花香的情景，未眠的，岂止是那一株株素色海棠，还有那颗跳动着的充满诗意的心。<br>&emsp;&emsp;一夜殆尽，晨光破晓，闭眼沉思，用心发现，许自己一份雁过无痕，一种大爱留香，轻启双唇，浅唱韵律，你会感受到即使在不经意间，亦可铭记那一抹不可磨灭的瑰丽。骚人踌躇徘徊的清丽身影，在风骨的笔锋末端，默然与我相望，凝眸浅笑，漫步于暗香盈袖的诗林，一低眉，一俯首，目之所及，皆是精彩，茶香已渐渐淡去，墨香却徘徊依旧。</p>
+<h2 id="与你同行"><a href="#与你同行" class="headerlink" title="与你同行"></a>与你同行</h2><p>&emsp;&emsp;柳凝翠，碧水沉烟，闲坐窗前，煮一壶清茶，将经年旧梦都泡在里面。时光缄默，岁月静好，书籍啊，只因有你，我的生活多了一道色彩。与你同行，掠过氤氲晨夕，回头望，是那羽翼渐丰的韶华。<br>&emsp;&emsp;书桌上，清风掀动书页，已辨不出是哪个年代的墨迹。那年梅花，不知遗落在谁家院墙下；那支凤钗，不知斜插在谁的青丝上；那条预言，不知镌刻在谁的命运里；那位舞女，不知萦绕在谁的眼眸中……<br>&emsp;&emsp;闭上眼睛，细细品味，阵阵书香映脑海。与你同行，信步文学花园，读墨色阑珊，读尘心静美，读闲适淡然，读花间往事，更读一缕素韵映书笺。<br>&emsp;&emsp;我喜欢纯真浪漫的三毛，为追寻心中那棵“橄榄树”，她踏遍万水千山；我喜欢读知性灵动的纳兰词，感受“我是人间惆怅客，断肠声里忆平生”的飘逸；我喜欢读深情大度的余秋雨，感慨他对历史文化的独到见解。徜徉书海，我与安利柯一起感受爱的教育，与泰戈尔赏《飞鸟集》，与冰心看《繁星》，阅《春水》。<br>&emsp;&emsp;打开如诗的心篱，研一池墨香，用浅浅的文字把清风明月描进人生画卷。书籍，与你同行，心灵的芳香弥漫曾经，任红尘纷扰，心白清风月朗。浅吟低唱，且行且安。<br>&emsp;&emsp;啁啾青鸟，葱郁年华。书籍啊，无论何时，你都陪伴左右。我与杜工部下襄阳至洛阳，闻春夜喜雨、剑传蓟北，悲哉茅屋为秋风所破，哀哉朱门酒臭路有死骨；与稼轩一起看佳人于灯火阑珊处，醉里挑孤灯看剑，梦回战鼓号角连营，惜哉白发已生；与李清照同问海棠是否依旧，听雨打芭蕉，看鸥鹭争渡，苦哉深睡不消残酒。<br>&emsp;&emsp;“吾心似秋月，碧潭清皎洁。”文字是有味道的，是灵动的。只要当自己觉得自然随意、倾心怡心了，便已沉醉其中。书籍啊，与你同行，我总是怦然心动。“草在结它的种子，风在摇它的叶子，我们静静的，不说话。”<br>&emsp;&emsp;岁月极美，美在辗转，春有新枝，夏有葱绿，秋有收获，冬有蕴藏，而我们，可以和着阳光写诗。书香，与你同行，这样的日子，心中若有一间书屋，可在书中寻日月。此时，只有一人、一心、一片纯洁的世界。</p>
+<h2 id="带一本书去旅行"><a href="#带一本书去旅行" class="headerlink" title="带一本书去旅行"></a>带一本书去旅行</h2><p>&emsp;&emsp;书，是人的精神伴侣；书，陪你走向远方，而《苏东坡》，一直陪伴在我的旅途中。</p>
+<h4 id="西湖边"><a href="#西湖边" class="headerlink" title="西湖边"></a>西湖边</h4><p>&emsp;&emsp;西湖上挂着春日柔和的太阳，微风拂过，水面上起了阵阵涟漪。微风抚过大地上的万物，抚过我的脸庞……</p>
+<p>&emsp;&emsp;我坐在西湖的游船上，膝间摊着那本书。阳光照着水面，反射出道道金光，依稀中，似乎又看到了他，苏东坡。1000年前，他也坐在游船上，把酒言欢，赏着西湖美景，写下了“欲把西湖比西子，淡妆浓抹总相宜”的千古名句。他饮下了最后一杯酒，在金光中，消失了。</p>
+<p>&emsp;&emsp;《苏东坡传》，在西湖上伴着我，带上这本书去西湖，能找到真正的苏东坡。</p>
+<h4 id="承天寺中"><a href="#承天寺中" class="headerlink" title="承天寺中"></a>承天寺中</h4><p>&emsp;&emsp;天空中挂着一轮圆月，洒下清冽的月光，洒在了朱红的墙上，那吊角飞檐上，那一樽樽古老的佛像上。</p>
+<p>&emsp;&emsp;漫步在承天寺的庭院里，坐在长櫈上，摊开了那本书，月光洒在庭院中，宛如清澈的泉水一般。在这澄澈的月光中，我又看到了他，苏东坡。1000年前，他也曾与张怀民漫步在这庭院中，感慨万千，看着这月色，写下了“庭下如积水空明，水中藻荇交横……”的千古名句。月光中，他长叹一声，便消失了。</p>
+<p>&emsp;&emsp;《苏东坡传》，在承天寺中陪伴着我，带上这本书，让我真正理解他的愁苦。</p>
+<h4 id="庐山上"><a href="#庐山上" class="headerlink" title="庐山上"></a>庐山上</h4><p>&emsp;&emsp;夕阳斜挂在天边，洒下道道光辉，射在庐山郁郁葱葱的树林中，射在庐山那一汪汪潭水中。</p>
+<p>&emsp;&emsp;我，在庐山的瀑布前，伫立着。山崖上，涌下来道道泉水，踊跃着，争抢着，冲了下来，冲在那深潭黝黑的水面上，击起一阵阵水雾。在夕阳的映衬下，在水雾的迷离中，我又看到了他，苏东坡。他背着行囊，在山中行走着、徘徊着，看着高大的庐山，吟出了“不知庐山真面目，只缘身在此山中”的千古名句。他长叹一声，在迷离的水雾中，消散了。</p>
+<p>&emsp;&emsp;《苏东坡传》，在庐山的夕阳下，陪伴着我，让我理解他的迷惘。</p>
+<p>&emsp;&emsp;一路走来，在西湖的春日里，在承天寺的月光下，在庐山的夕阳中下，《苏东坡传》陪伴着我，带上一本书去旅行，真好！</p>
+<h2 id="阅读，让我的生活更精彩"><a href="#阅读，让我的生活更精彩" class="headerlink" title="阅读，让我的生活更精彩"></a>阅读，让我的生活更精彩</h2><p>&emsp;&emsp;岁月在回忆中唱尽了歌，温柔地挽起如梦般的轻思，我在她的长河里穿梭流转，与书为伴，和梦起舞。阅读，让我的生活更加精彩，就像云彩点缀了蓝天，就像小草装饰了大地。<br>&emsp;&emsp;在“浅草才能没马蹄”的三月，我们携手。<br>&emsp;&emsp;儿时的快乐、童真，无一不是伴随着一本本连环画度过的。每当看到白雪公主与王子幸福地生活在一起时，我会开心得两眼放光；看到恶毒的皇后毒害公主时，我又愤怒又无奈，恨自己不能跳进去帮助公主；看到海的女儿为爱而幻化成绚烂一时的泡沫时，我很感动，还有些伤心。读书，让我的童年既梦幻又真实。<br>&emsp;&emsp;在“小荷才露尖尖角”的六月，我们相约。<br>&emsp;&emsp;时光如漏沙，不知不觉间我已步入了中学殿堂。小时候看惯了玫瑰色的海，听惯了枫叶似的词。恍惚间，我们已从缤纷的五月，要走向刺眼的七月。直到这时，我们才发现，现实是残酷的。一次次可怜的分数，宛如一道闪着狰狞光芒的闪电，将我劈得“外焦里嫩”；在一个个早晨伴着星星上学晚上踏着月光回家的日子里，我忙碌得没有了方向……<br>&emsp;&emsp;这时我又捧起了书，她带领着我去看保尔，去看他是如何坚强的面对生活和未来，让我懂得了“钢铁是怎样炼成的”深刻含义；她又拉着我走进了老舍的《骆驼祥子》，让我看到了祥子由善良淳朴到自甘堕落的悲惨一生，让我开始深刻反省自己——我不能堕落，我要勇敢乐观地面对现在。我不断地从书里吸收营养，不断地在矛盾中把自己从偏离的轨道上拉回来。<br>&emsp;&emsp;是的，阅读让我平凡的日子变得流光溢彩，让我觉得自己与众不同，我更加自信了。<br>&emsp;&emsp;我相信只要努力了就一定会有某种方式的回报，我相信真诚能收获真诚；我会在心情灰暗时咧嘴笑一笑，我会朝着某个目标尽力奔跑……即使失败，也不会退缩，因为我的心中已升起一道带有书香气息的彩虹。<br>&emsp;&emsp;岁月的风铃吹走了光阴，摇落了四季，今后只愿，岁月静好，时间不老。我要与书相拥，精彩一生。</p>
+<h1 id="亲情类"><a href="#亲情类" class="headerlink" title="亲情类"></a>亲情类</h1><blockquote>
+<p>时光太瘦，指缝太宽。如梭的岁月，飞快流逝，如同妈妈的发色，已青丝成雪。</p>
+</blockquote>
+<blockquote>
+<p>这一刻，妈妈的爱如同阳光般冲出云层，挥洒在我的心间。妈妈的发色，在我心中，也永远定格在坚毅的栗色，再不会褪去。</p>
+</blockquote>
+<blockquote>
+<p>奶奶熬出的豆浆沁人心脾，散发着乡间淳朴浓郁的乡土气息。</p>
+</blockquote>
+<blockquote>
+<p>氤氲的夜色浸透蓝色的窗棂, 似乎又看到明亮的烛焰泛着柔和的色泽轻轻摇曳。眼神凝注于此, 抬头望去, 你的面容缠绵了多少水木年华, 真真切切。</p>
+</blockquote>
+<blockquote>
+<p>岁月无痕，一些东西在不知不觉中消逝了。但总有一段记忆会在生命中留下痕迹，每当想起时，心中感慨万千，那便是感动。</p>
+</blockquote>
+<h3 id="母亲"><a href="#母亲" class="headerlink" title="母亲"></a>母亲</h3><h2 id="滋味"><a href="#滋味" class="headerlink" title="滋味"></a>滋味</h2><p>&emsp;&emsp;妈妈好像一直在忙碌，一直在奔波。她没吃过肯德基，不懂得流行歌曲，甚至，连电脑开关机也得我手把手地教。我说她不懂得品味生活，不懂得品味生活的滋味。</p>
+<p>&emsp;&emsp;我们家族有胃病史，爸爸的胃不太好。很多年前，妈妈得到了个偏方，每天早晨喝一碗开水冲的鸡蛋汤，可以治疗这种胃病。多少年来，妈妈每天早晨要早起 20 分钟，悄悄地到厨房，轻手轻脚地冲上一碗鸡蛋汤，再端到爸爸的床头，摇醒他，让他喝。</p>
+<p>&emsp;&emsp;早上，冲一碗鸡蛋汤，喝一碗鸡蛋汤，分别是妈妈和爸爸的习惯，已经成为生活中的一部分。</p>
+<p>&emsp;&emsp;从我记事起，就总会听见早晨妈妈烧水的声音。我见过妈妈冲鸡蛋水，那蛋清和蛋黄瞬间交融在一起，再也不会分离，就像是爸爸和妈妈的生命彼此融合一起。鸡蛋汤很漂亮，像一朵百合花开在碗里。我争着抢着要先喝一口，唉，那滋味竟是腥涩的。</p>
+<p>&emsp;&emsp;不过，爸爸的笑容，似乎总是在验证，那碗鸡蛋汤味道很好。我想不明白，一碗鸡蛋汤，怎么会让爸爸露出满意的笑容呢？我才不喜欢那种腥涩的滋味呢。</p>
+<p>&emsp;&emsp;五一假期，我早晨醒来，又听见了厨房里妈妈的烧水声。我一怔，那是妈妈在冲鸡蛋汤。我来到客厅，只见茶几上那碗鸡蛋汤依然如花开放。我悄悄地啜了一口，不禁一怔——味道变了！妈妈笑着说：“我加了蜂蜜。”</p>
+<p>&emsp;&emsp;妈妈端着汤，蹲在床边，凝视着爸爸满意地喝完鸡蛋汤。霎时，我好像懂了，那鸡蛋不论是腥涩还是香甜，在父亲那里都是幸福的滋味。二十年的坚持，二十年的体贴，二十年的凝视，一碗鸡蛋汤蕴含着关于他们何等浓郁的爱的滋味啊！</p>
+<p>&emsp;&emsp;那一刻，我才明白妈妈不是不懂得品味生活的滋味。她所追求的幸福滋味全都在她对家人的付出里，她所品味的生活滋味，就像是那碗加蜜的鸡蛋汤——唇齿留香。</p>
+<h2 id="妈妈的发色"><a href="#妈妈的发色" class="headerlink" title="妈妈的发色"></a>妈妈的发色</h2><p>&emsp;&emsp;似乎从小到大，都最怕写妈妈。不是不想，而是怕。妈妈这个角色，不可浓墨重彩，更不可轻描淡写，多一分显做作，少一分显薄情。一时兴起，想写一写自己最爱的妈妈，却突然不知从何下笔。“妈妈” 这两个字，光是在唇齿间萦绕，便是说不出的意蕴悠长。</p>
+<p>&emsp;&emsp;在我十四年的生活中，占据了大部分记忆的，毫无疑问是妈妈，虽然有将近十年的学校寄宿生活，但我对妈妈的感情，并没有因为这个，而淡漠一丝一毫。而当那一天，无意中看到放在钢琴上的照片，才猛然发现，自己从未用心关爱过妈妈。</p>
+<p>&emsp;&emsp;那是一张我四五岁时和妈妈的合影。那时妈妈还不到四十，留着一头极为飘逸的长发，乌黑的长发潇洒地披在脑后，显得非常青春靓丽。她抱着小小的我，温柔地笑着，笑里有宠溺，有幸福。</p>
+<p>&emsp;&emsp;我忽然心中一颤。到底有多少年没见过妈妈留长发的样子了？我发现自己竟然已经记不清了。</p>
+<p>&emsp;&emsp;中午吃饭，装作心不在焉的样子问起妈妈剪短发的原因。妈妈一脸理所当然的样子：“长发不好染啊！” 我才蓦然想起，几年前妈妈就开始染发了。现在我看到的妈妈这一头漂亮的栗色头发，其实都是染出来的，而真正的颜色…… 是刺眼的白。</p>
+<p>&emsp;&emsp;不禁生出了想给妈妈染一次发的念头，正巧前几天妈妈念叨着要染发，我便毛遂自荐道：“妈妈，您的头发是不是又该染了？这次我来吧。”</p>
+<p>&emsp;&emsp;戴上薄薄的塑料手套，手中拿着已经被染发剂染得看不出本来颜色的梳子，小心翼翼地在妈妈的头发上 “工作”。看着妈妈头顶的银发，我不禁鼻子有些发酸，忙装模作样地转过头去，假装想打喷嚏。</p>
+<p>&emsp;&emsp;“怎么了？” 没想到妈妈却紧张起来，“是不是染发剂的味道闻着不习惯？这个东西就是太刺鼻了，来，给我吧，你出去透透气。” 我咬了—下嘴唇，妈妈，做一切事情都先考虑女儿的您，又怎么会了解我的心痛。</p>
+<p>&emsp;&emsp;“没事。” 我硬生生地挤出一抹笑，“说不定是谁想我了呢。” 风趣的话语让整个房间温暖了不少。我仔细梳理着妈妈的头发，终于发觉妈妈生命中最意气风发的金色年华，不知何时已悄然溜走。</p>
+<p>&emsp;&emsp;真应了那句话：时光太瘦，指缝太宽。如梭的岁月，飞快流逝，如同妈妈的发色，已青丝成雪。</p>
+<p>&emsp;&emsp;“妈，如果时间就停在这一刻，您不再变老，永远是这个样子，好不好？” 心中想着，不自觉地溜出了喉咙。</p>
+<p>&emsp;&emsp;“开什么玩笑呢？” 投成想妈妈却哂笑，“且不说这有多荒唐。就算时间真的停住，我不再变，可是你也同样不变了呀。你还如何长大呢？妈还等着看你长大的样子呢。”</p>
+<p>&emsp;&emsp;听着这句玩笑的话，我眼眶微红。</p>
+<p>&emsp;&emsp;原来，妈妈从来就没有为自己打算过一丝一毫，就像她并不在乎自己的发色，并不在乎自己渐渐衰老，却悉心关注着我的成长，我的未来。</p>
+<p>&emsp;&emsp;因为，她心中满满的，全是她引以为傲的一女儿。</p>
+<p>&emsp;&emsp;这一刻，妈妈的爱如同阳光般冲出云层，挥洒在我的心间。妈妈的发色，在我心中，也永远定格在坚毅的栗色，再不会褪去。</p>
+<h2 id="奶孙"><a href="#奶孙" class="headerlink" title="奶孙"></a>奶孙</h2><h2 id="我最想做的事"><a href="#我最想做的事" class="headerlink" title="我最想做的事"></a>我最想做的事</h2><p>&emsp;&emsp;回忆如快速剪辑的电影片段，那一抹醇厚的豆香，一直在我的心头萦绕。<br>&emsp;&emsp;我最想做的事情，就是再看看奶奶做一次豆浆。<br>&emsp;&emsp;奶奶家蜗居在村头一间淡雅温馨的小瓦房里。天气寒冷的时候，那些慕名而来的游客，便会伴随着客车的鸣笛声拥挤在这座普通的村庄中，赶趟儿似的欣赏那令人神往的雪乡风情。只要逢年过节，奶奶就会亲自在大锅中熬煮一些新鲜的豆浆。那个时候，奶奶便会呼唤我们姐弟二人：“走，卖豆浆去。” 只消一会儿工夫，那溢满清香的豆浆，就被游客们抢光。<br>&emsp;&emsp;奶奶做的豆浆好喝，人们抢着买，那是奶奶精心制作的结果。<br>&emsp;&emsp;奶奶在买豆子的时候，总是那么细细地挑选，仿佛其中有宝石一般。别人在旁插手，她会连忙制止。那认真的样子真是无话可说，全神贯注的样子更令我钦佩不已。奶奶每每挑完豆站起来的时候，都会有眩晕的感觉。我劝奶奶不必那么认真，而奶奶却从未改变。<br>&emsp;&emsp;精心挑选好豆子之后，就要用水浸泡，还要亲自用石磨磨制。奶奶整日不间断地在磨前转动着，有时累到胳膊都抬不起来。我劝奶奶说干脆用电动的钢磨会省些力气，可奶奶却说，那样会失去了醇厚的豆香味道。<br>&emsp;&emsp;奶奶的豆浆不贵，天气寒冷时，人们喝上一口热气腾腾的豆浆，便觉得周身暖暖的，整个人顿时有了精神，那被风雪冻红的手和脸也渐渐地恢复了本色。每到这时，奶奶的豆浆就会赚得客人心满意足的笑声。<br>&emsp;&emsp;也许是奶奶知晓做生意讲究和气生财的道理，所以她总是把精心做的豆浆，便宜出售，似乎并不为赚得几多收入。奶奶善良，这是她生活的乐趣。<br>&emsp;&emsp;奶奶熬出的豆浆沁人心脾，散发着乡间淳朴浓郁的乡土气息。<br>&emsp;&emsp;很多年后的今天，我最想做的事儿，是希望乘坐乡间的旅游大巴车，来到奶奶的身边，和奶奶一起挑豆子、磨豆浆，让那乡村间的淳朴与善良成为我成长中不竭的力量。<br>&emsp;&emsp;多少年后，你也许会看到有这样一幅画面，一个老婆婆在石磨前忙碌着，她的面前摆放着一碗碗香气四溢的豆浆。但愿，那是几十年后的我，享受着豆浆的甜美和快乐。</p>
+<h2 id="父子"><a href="#父子" class="headerlink" title="父子"></a>父子</h2><p>##抬头看看，会有别样风景<br>&emsp;&emsp;氤氲的夜色浸透蓝色的窗棂, 似乎又看到明亮的烛焰泛着柔和的色泽轻轻摇曳。眼神凝注于此, 抬头望去, 你的面容缠绵了多少水木年华, 真真切切。<br>&emsp;&emsp;日落, 天边泛起缕缕红晕, 带着满心琐碎的烦恼, 撞门而入, 唯有摔书的 “咣当” 声能稍稍慰藉我的心灵。物理实验作业, 哪里有条件去完成? 气呼呼冲入屋内, 锁舌咬住锁孔, 咔咔作响, 我漠然。</p>
+<p>&emsp;&emsp;门轻轻开了, 熟悉的面孔, 是爸爸。他莞尔一笑, 手中托着一个轻巧的筒,“来, 爸爸陪你做。”</p>
+<p>&emsp;&emsp;走进光线幽暗的客厅, 那个并不伟岸的身影蹲下来, 默不作声地配合着我。一束温柔的烛焰划开漆黑的夜色, 我小心翼翼为纸筒穿好针眼, 套上薄膜, 睁大眼睛观察, 哦, 烛光动了。</p>
+<p>&emsp;&emsp;倒立的烛焰随父亲的移动变化着距离, 时而大, 时而小, 时而明亮, 时而模糊, 跳跃的火苗, 点亮我心。小孔成像的道理, 此刻竟这么直观地呈现在眼前, 成功的欣喜宛若灿灿的烛花, 簇簇的绽放, 仿佛要挣脱夜的黑, 粲然点亮笑颜。</p>
+<p>&emsp;&emsp;抬头一瞥, 爸爸那深邃的眼眸正专注地凝视着我, 凝视着那烛光。那星笔直的烛焰, 灿灿美丽地闪耀着, 映着他那满是风霜的面颊, 映着他那新添的胡茬, 绘成如此美丽的风景, 别样动人。那光, 火一般跳动, 犹如一朵盛开在黑暗中的野菊花, 在无边的静谧中, 任一颗关注儿子的心在炽燃, 是株在夜的沃土下悄悄抽芽的小小菩提吧? 一片光的叶子, 是一本黄金锻打的福音书, 为我送来你的佑护, 是你为我掘开一条光明之河, 圈圈漾起的爱里, 已注入你一汪深沉的期待。</p>
+<p>&emsp;&emsp;无形的风景勾起记忆深处的渐进与清晰: 溜冰场上, 你形影不离, 紧紧相随; 校门口处, 你久久伫立, 翘首期盼; 上琴课时, 你一路接送, 奔波至晚，回忆的脉络混沌成你手掌心冗杂的曲线, 细数有你陪伴的无数个清晨与黑夜，雕镂我心。</p>
+<p>&emsp;&emsp;清风拂过，一缕烛光掠过小孔，在懵懂的少年心中留下别样美丽的风景。抬头那一瞥留下的心动，在年少的每个朝晖夕阴踟蹰、铭刻……</p>
+<h2 id="感动"><a href="#感动" class="headerlink" title="感动"></a>感动</h2><p>&emsp;&emsp;岁月无痕，一些东西在不知不觉中消逝了。但总有一段记忆会在生命中留下痕迹，每当想起时，心中感慨万千，那便是感动。</p>
+<p>&emsp;&emsp;那天早晨，我像往常一样醒来，却看到窗外风雪交加，大树在狂风中摇晃，一根根树枝就像挥动着的鞭子在空中狂舞，似乎预示着汽车限号日的麻烦。待我匆匆忙忙地洗漱完，爸爸就一把拉起我的手冲下楼等出租车。寒风刺骨，雪花在风中乱舞，扑在脸上，冲进眼里。阴霾中，爸爸用双手紧紧地握住我，感觉宽厚有力。</p>
+<p>&emsp;&emsp;我们在路口徘徊，却始终不见出租车的影子。焦急和失落中，爸爸推着他的自行车走到了我面前，用纸巾轻轻擦去后座上的泥水，他的手指触及到一颗颗小冰粒，体热将它们瞬间融化。这双温暖的手，随着时光流逝皱纹越来越多，也变得粗糙起来。</p>
+<p>&emsp;&emsp;自行车缓缓向前，北风吹翻了爸爸防寒服的帽子，我才发现，不知何时爸爸的青丝中多了几绺白发，岁月留下了痕迹，几道皱纹悄无声息地爬上了爸爸原本圆润的脸颊，曾经明亮的眼睛经历了风霜也变得暗淡了…… 小时候的情景还历历在目，瞬间，酸楚从心里涌上了鼻尖……</p>
+<p>&emsp;&emsp;“冷吗？”</p>
+<p>&emsp;&emsp;“还行。”</p>
+<p>&emsp;&emsp;“戴手套了吗？”</p>
+<p>&emsp;&emsp;“没……”</p>
+<p>&emsp;&emsp;自行车一下子停在了路边，爸爸把自己的手套摘下来给我套上，又用围巾围住了我的脸，只露出我的眼。透过唯一露出来的双眼，我看见爸爸的脸上不知是雪还是汗，全湿了，还没来得及说话，车子又继续前行了。坐在后座上的我，隐约听到了爸爸的喘息声，路边的树木后退得也越来越慢了，我知道爸爸累了。</p>
+<p>&emsp;&emsp;注视着爸爸的背影，内心充满愧疚，原先的焦急渐渐被那一阵阵心疼和感动代替。</p>
+<p>&emsp;&emsp;“爸，您歇会儿吧。”</p>
+<p>&emsp;&emsp;“不用，马上就到学校了。你冷不冷？”</p>
+<p>&emsp;&emsp;此时我再也控制不住，泪水滑过鼻梁，流到嘴里，咸咸的。</p>
+<p>&emsp;&emsp;“不冷。”</p>
+<p>&emsp;&emsp;此刻周围的景物都已模糊，只剩下爸爸高大的背影，还是那么清晰。</p>
+<p>&emsp;&emsp;感动，回荡在心间……</p>
+<h2 id="抗疫-疫情"><a href="#抗疫-疫情" class="headerlink" title="抗疫 疫情"></a>抗疫 疫情</h2><h2 id="疫路相伴，为心护航"><a href="#疫路相伴，为心护航" class="headerlink" title="疫路相伴，为心护航"></a>疫路相伴，为心护航</h2><p>&emsp;&emsp;当车水马龙的街市像被按下了暂停键，当阴霾密布的疫情笼罩了城市的春天，当身着校服的我们盘桓于书房的一隅，我们，又该如何解困？普希金说：“灾难的姐妹，希望永远会唤醒勇气和欢乐。”是的，穿越寒冬的方法就是忍受它、经历它、吸收它，杨柳春风定会亲吻我没有口罩遮盖的脸颊，艰难困苦，玉汝于成！<br>&emsp;&emsp;开学仅仅一周，突如其来的疫情就打破了一切，我们被迫转成线上上课，原本书声琅琅的校园一下子变得寂寥无人。</p>
+<p>&emsp;&emsp;网课是生动有趣的，虽然是线上教学，但比起在家自学，效果显然要好很多。网课开始了，老师熟悉的声音，还有透过电脑屏幕显示在眼前的一张张熟悉的同学面孔，让我倍感亲切。老师声情并茂的授课、同学们积极的发言，让我仿若置身于曾经的班级课堂中。</p>
+<p>&emsp;&emsp;偶尔也会遭遇不能出门的憋闷，无聊时，我习惯倚窗而望，“大白”们在临时搭建的救灾棚外组织社区居民排队、扫码、核酸检测；或者捧起一盒凉透的盒饭，就着雪花，艰难咽下；抑或背起沉重的消毒药桶，操起喷管，一步一喷洒……寒风暴雪中，他们用信念去战斗；疫毒重生里，他们用血肉之躯去扛起。相比之下，困守家中的我们似乎什么都做不了，不，逆行者可贵，顺行者同样可赞！人们戏言“终于到了躺在家还能为祖国作贡献的时候了”。不错的，我们老老实实在家，静下心来学习、生活，努力保护好自己和家人，不受病毒感染就是对祖国的贡献了。除此之外，我们更要努力学习，不断提升自己，静待成长，他朝长缨在手，何愁缚住苍龙？！</p>
+<p>&emsp;&emsp;疾风板荡山河壮，四海相逢骨肉亲。在疫情面前，每个人都显得那么的苍白无力、脆弱渺小，但我们不怕！我们坚信——殷忧启圣，多难兴邦！这次疫情虽然不是那么容易遏制，但这正体现了我们伟大祖国的凝聚力。各地纷纷捐赠物资给吉林，吉林是中国的吉林！看着新闻报道中各地医生、专家带着物资奔赴吉林，看着人们在网上为吉林加油打气，看着朋友圈中同学们一个个的捐款截图……这一切的一切，都让我们感动，这便是我们的祖国，这便是我们最温暖的大家庭，祖国母亲不会放弃每一个孩子。</p>
+<p>&emsp;&emsp;电影《喜剧之王》中有一段这样的对话，“看，前面漆黑一片，什么也看不到。”“也不是，天亮后会很美的。”春天到了，这道光已愈发耀眼，它在轻轻告诉我们——天快亮了。在这散发着人性温暖的光亮下，坚冰可被融化，疫情终将散去。待得惠风和畅时，让我们在春光里绽开挂着眼泪的笑涡。</p>
+<h2 id="冰天雪地里的“教科书”"><a href="#冰天雪地里的“教科书”" class="headerlink" title="冰天雪地里的“教科书”"></a>冰天雪地里的“教科书”</h2><p>&emsp;&emsp;春风还未把吉林这片黑土地吹软，我们的城市就遭遇了新冠疫情的“倒春寒”，狡猾的奥密克戎毒株阻止了我踏入校园的脚步，也让我看到了那本站在冰天雪地里的“教科书”。</p>
+<p>&emsp;&emsp;由于引发此次疫情的奥密克戎变异株传染性强、传播速度快、隐匿性高，吉林省染疫人数在不断增加。为了第一时间将病毒传播的链条切断，我们开始进行全员核酸检测。</p>
+<p>&emsp;&emsp; “请钢铁小区3单元的居民下楼做核酸检测！”随着一声叫喊，我们3单元的居民闻令而动。刚推开单元大门，冷风就夹杂着雪花往衣领里钻，我连忙快走几步，期待自己暴露在风雪中的时间能短一些。 </p>
+<p>&emsp;&emsp;我刚站到准备检测的队伍中，一道熟悉的声音就伴着寒风卷过耳边：“请大家保持两米距离，打开手机出示吉祥码。”“咦，这声音怎么像我们语文老师的？上午她还在给我们上网课，下午就变身‘大白’啦？”我带着疑问跟着队伍一点一点前移。当我来到这位“大白”面前，透过满是雾气的防护面罩，我看到了语文老师模糊的脸。她举起手机快速地扫描了我的吉祥码，看到我的名字，她停顿了一下，然后她一边向我身后走去一边说：“做完检测赶紧回家！”我回头望着她臃肿的背影，脑海里突然想起她在语文课上为我们讲解的那句名言：“中国自古以来，就有埋头苦干的人，就有拼命硬干的人，就有为民请命的人，就有舍身求法的人……他们是中国的脊梁。”</p>
+<p>&emsp;&emsp;回到家中，我站在窗户后面努力寻找着语文老师的身影，可是窗外那几个“大白”移动得太快了，她们一会儿跑去别的单元门口喊话，一会儿跑到核酸检测队伍旁边扫码，一会儿又凑到一起互相喷洒酒精消毒……我实在分不清哪个才是她。妹妹看我在窗户边上站了半天，疑惑地问我在干什么，我指了指窗外告诉她：“哥哥正在认真学习！”她嘴里喊着“骗人”笑着跑开了。唉！她还太小，她不明白我说的是真心话。</p>
+<p>&emsp;&emsp;窗外的风还在“呼呼”地刮着，窗外的雪还在纷纷扬扬地落下，我的语文老师顶风冒雪还“战”在抗疫一线。她不知道，在冰天雪地之中，她把自己“行”成了一节最生动的爱国课，“站”成了一本最有说服力的教科书！</p>
+<h2 id="合唱"><a href="#合唱" class="headerlink" title="合唱"></a>合唱</h2><p>&emsp;&emsp;春，这个带给人们勃勃生机的季节，本应是美丽的。可今年的春天，一场突如其来的新冠病毒，让这个春天变得有些灰暗。<br>&emsp;&emsp;以往热闹的大街小巷，变得冷冷清清。从城市到乡村，一夜之间仿佛按下了暂停键，顿时让人感到凄凉。夜已深，微微的凉意扑面而来。不知怎地，今夜，我失眠了。翻来覆去都睡不着，我不自觉地站起身，呆站在窗边，仰望星空。瑟瑟的春风吹乱了发丝，看着空荡荡的街道，我的内心更加空落。</p>
+<p>&emsp;&emsp;霎时，一缕熟悉的旋律随微风送到了我的耳边。悦耳的旋律让我也不禁随之哼唱了起来。紧接着，一盏盏灯光接连亮起来，小区里的一个个窗口被灯光点燃，照亮了黑夜。《歌唱祖国》——这首中国人民最滚烫的心声、最神圣的诗章、最雄壮的呐喊，此刻在小区唱响！邻居们纷纷挥舞着手机灯光随着歌曲的节奏缓缓晃动，“五星红旗迎风飘扬，胜利歌声多么响亮……”歌声回荡在整个小区内。从一个人的小声哼唱到居民们站在窗前隔空大合唱，楼上楼下，人们互相打气鼓励，“吉林必胜，白城必胜”的喊声不绝于耳，面对这一幕，我不禁热泪盈眶。在这大地沉寂，夜色苍茫的傍晚，不屈的歌声在小区里唱响，也在我的心中唱响。</p>
+<p>&emsp;&emsp;“集体阳台大合唱，这个创意不错。”“大家约个时间，手机灯光亮起来。”“今晚排练看看效果，明晚7点正式开始！”“我家的小货车可以改造成移动的小舞台”……原来，一份“抗疫之声”合唱方案早已在小区业主微信群里炸开了锅。<br>&emsp;&emsp;“是亲必顾，是邻必护；行要发伴，居要好邻”是我们小区的群文化。第二天，“演唱会”如期举办，小区的居民纷纷打开阳台灯、亮起手机灯，跟着音乐挥动双手、共同歌唱起来，一时间变成了居民歌唱伟大祖国的盛宴。在社交平台上，不少居民一边直播这动情的一幕，一边自发跟着合唱，感人的评论一时刷满屏幕。“大白城的风范，特殊时期不失温暖，我爱我的家乡。”“传播正能量，有难同当！”“致敬人民，抗疫加油！”小区里不相识的人隔空加油，一句“都会好起来的 ”，让人瞬间破防 ……</p>
+<p>&emsp;&emsp;疫情之中有无数漫漫长夜，这夜色有时会浓得让人感到无法逃脱，好像等不到晨曦，但也正是在这段令人郁闷的日子里，有一道天光划开了死寂，那便是我们的大合唱，我们的“演唱会”。我，我们，这些与疫情的暴风雨对抗的海燕，从来都不会止息了自己的歌喉，停歇了自己的翅膀，用这晨星般的歌声，去驱散那四处蔓延扩散的黑夜。<br>&emsp;&emsp;在这段居家抗疫的日子里，这样的夜晚、这样的歌声足够支撑我走向光明。“轻吟史诗同心为，高唱国歌抒热血。一方有难八方援，情动山河疫霾灭。”</p>
+<h2 id="春风十里不如你"><a href="#春风十里不如你" class="headerlink" title="春风十里不如你"></a>春风十里不如你</h2><p>&emsp;&emsp;三月的春，三分乍暖，七分还寒，而春风中的你，如此挺拔。</p>
+<p align="right">——题记</p>
+
+<p>&emsp;&emsp;三月，白城。</p>
+<p>&emsp;&emsp;疫情又悄然笼罩着华夏大地，世间万物像被按下了暂停键，迷惘而无助。一切是那样突然，仿若大梦一场，醒来已是居家防护、线上学习、全民核酸……<br>&emsp;&emsp;我眼中的白城似乎被蒙上了一层面纱，一边是岁月安好，一边是防疫人员撑起的一片天；一边是波澜不惊，一边是医护人员忙碌的背影……曾经的热闹不知何时终归于尘。 </p>
+<p>&emsp;&emsp;居家网课学习的背后，是老师们忙碌的身影。收到停课通知后，老师们进忙着帮我们整理书本，挨个放在门口；为了一节45分钟高效的网课，他们通宵达旦备课、录播，成了学生和家长心目中神圣的“主播”。逆行的白衣天使、热心的志愿者、奔波的外卖小哥……他们在各自的工作领域奉献着自己的光和热，有一种美丽叫坚守，有一种品质叫甘之如饴。一幕幕场景，一个个瞬间，氤氲成一枝旖旎的香。</p>
+<p>&emsp;&emsp;我家对门的阿姨，是一位疫情防控工作小组的志愿者。清晨，当我还睡眼惺忪的时候，隐约听见一阵匆忙的脚步声。到了做核酸的那天，我戴上口罩匆匆地下楼排队，一个简陋的棚屋，支起一片爱心的空间，对门的阿姨和几位医生一起，穿戴着笨重的防护服，就这样坐在露天的环境下。春寒料峭，街道两旁的树木随风摇曳，一股透心的冷意直涌上心头，我不禁打了个寒战。</p>
+<p>&emsp;&emsp;轮到我做核酸了，医护人员们不断搓起手来，亲切地说道：“张嘴，啊！”她的手轻轻划过我的手掌，好冷！而对门的阿姨在旁边帮着填写单子、量体温，忙碌了几个小时才准备回家。她缓缓地脱下防护服，半调侃地对我说：“真没想到，这行装穿起来倒挺酷的，脱起来竟如此困难。”</p>
+<p>&emsp;&emsp;回家途中，我看着她冻得有些发紫的双手，心疼地说：“阿姨，你为什么一定要当志愿者呢？天这么冷，还牺牲了自己的时间。”阿姨轻轻地往手中哈气，给了一个坚定的笑容：“凡大医治病，必无欲无求，发大慈恻隐之心。都是中国人，互相帮助是应该的，我们也要为抗疫献出自己的一份力量。”我恍然大悟，那一份执着与认真的背后，是牺牲，是把小我舍弃，是舍小家顾大家。</p>
+<p>&emsp;&emsp;“星星之火，可以燎原。”比起他们，我们身处温室中的学习，已是幸运中的幸运。料峭的春风，压不动挺立的腰板；满天的飞雪，奏响不平凡的乐章。因为无数个像对门阿姨一样的普通人，都怀有一颗炽热的心，一颗无私的心，一颗坚守的心！他们正是我们这座城市的守护神。</p>
+<p>&emsp;&emsp;抬头，望天，繁星很美。我想，你们的眼睛早已藏下星辰大海和万丈光芒。致敬战“疫”路上，千千万万个可敬可爱、平凡而又伟大的“你”。抗疫奉献暖三月，春风十里不如你！</p>
+<h2 id="春的告白"><a href="#春的告白" class="headerlink" title="春的告白"></a>春的告白</h2><p>&emsp;&emsp;没有一个冬天不可逾越，没有一个春天不会来临。</p>
+<p align="right">——题记</p>
+
+<p>&emsp;&emsp;春雨绵密如私语，悄然间，春天已到，但却碰上空无一人的街道，无人倾听春的告白。</p>
+<p>&emsp;&emsp;午后的阳光如旧，仍明艳而热烈。但单单一个“疫”字，好似暂停了我们的生活，偷走了我们的时间。</p>
+<p>&emsp;&emsp;日复一日的核酸检测不断催促着，旅途中的景色还来不及欣赏，便被推向下一站。刚刚排完核酸检测的长队，就急匆匆地走回家。风掠过我的衣角，看着这来去匆匆的身影，我不禁迷惘。我要去何处找寻往昔的春光呢？我不禁问自己。</p>
+<p>&emsp;&emsp;在回家的道路上，我看着户户紧锁的大门，看着手机里一串串不幸的数字，我闭了闭眼。真的再无法放肆地拥抱春天了吗？我想。</p>
+<p>&emsp;&emsp;清风卷起，仿佛一阵轻铃，把我从朦胧中唤醒。我抬眼望去，夕阳揉碎了云彩，晕染出了鲜艳的色彩，犹如画家自信的一笔，绘出挣脱束缚的自在和洒脱。布满枝头的点点小花，是春的定情信物，费尽心思地飘向我们的书册，独特的清香化作墨砚，写下为我们而作的情书。落叶铺下一地的浪漫，期待着带领我们走向熠熠生辉的远方。街边曾经被人淹没的花海，终于被你所注意到，灿烂的笑颜是能融化冰冷疫情的温度。</p>
+<p>&emsp;&emsp;象征春日的雏菊微微俯首，绅士地亲吻着我的手背。你笨拙却真诚，总是慢慢靠近我们，再小心翼翼地将炽热的爱藏在我们身边不曾被关注的地方。</p>
+<p>&emsp;&emsp;纵使疫情再如何强大，终是挡不住任何爱意的传递的。我们也许迷惘，我们也许孤独或失望，但一定要仔细倾听春的告白，看那和煦的春光。山河无恙在我胸，愿君归来若春风，山河无恙，是爱的约定。</p>
+<p>&emsp;&emsp;希望我们，都能在疫情散尽的世界里，一起听听春的告白。</p>
+<h2 id="城市的温度"><a href="#城市的温度" class="headerlink" title="城市的温度"></a>城市的温度</h2><p>&emsp;&emsp;名片《海上钢琴师》中有这样一段内容：当一生从未踏上陆地的钢琴师处在大海与陆地间的抉择之梯时，他看见了如机械野兽般的城市，千疮百孔，黑烟弥彰，带着无法掩饰的阴邪的笑将他引入魔窟……城市，仿佛就像看不尽的深渊。</p>
+<p>&emsp;&emsp;新春伊始，西安——这钢铁之躯的城市，笼罩在“新冠疫情”的阴影之下，是否也如影片里看起来这么冷漠？</p>
+<p>&emsp;&emsp;清晨起来，窗外竟已飘起雪花，无形的风操纵着雪奔突卷集，虽不能冲破玻璃侵占室内，但仍能将寒气侵入。我看见对面楼上那户人家，打开窗有赏雪之意，但好像恍然间想到了什么，将原先想接雪的手缩了回去。我想，既然有不怕冷伸手的勇气，那收手，一定是因为当下疫情，唯恐飘过楼上的雪可能携带病毒吧。去测核酸，喇叭高叫着要保持一米距离，但人人都不自觉地多退两步，若离得近了，前面的人会转过头用眼神示意你离远点。人们用手按着口罩，亦步亦趋，带着孩子的人更是谨小慎微，将孩子拢在身旁，不许乱跑。回来楼中，大家礼让三分地乘电梯，一趟最多四五人，若只单独自家能乘一趟便感万幸。倘乘电梯下行，亦不希望有人加入。</p>
+<p>&emsp;&emsp;城市里，人体之血液仿佛与环境一般，似都将至零度。</p>
+<p>&emsp;&emsp;然而，事情的“真相”并非如此——</p>
+<p>&emsp;&emsp;封闭的大门锁住了外面的世界，但带来了家人难有的朝夕相处，一天的生活终于是起床第一眼能见父母，一日三餐与父母同进，耳畔之声不再单一，馨柔的灯光下是三人的影子，也能吃上父亲亲手做的饭菜，也能全览母亲操劳的一天。想必，城市的角角落落，充盈着更多家的温暖。</p>
+<p>&emsp;&emsp;小区管控，大门紧封，小区外畔的自助打印机却仍能工作，打印出我的文件，便是因为好心的店主，不吝啬地来回跑路，在充斥着酒精消杀的道上，留下赠人“玫瑰”后的余香！在大家日夜惶恐的时候，还有人能顾及我们的需求。在政府无偿配发的菜品中，绿油油的菜叶上载着辛勤的汗珠，萝卜根上尘土不染，一块上等的生姜“炙手可热”，大白菜片片层层，裹着问候与鼓励。</p>
+<p>&emsp;&emsp;日与月交相上映，照得到我，照得到一家人、陌生人，照得到城市与其间的人。在一座座城市里，有病毒潜行，给全球多少人带去痛苦，但你也看得见，病毒“锁”住了人类，但也拉近了人类。国家救援的光热，就如同我与家人、与陌生人，以及大家与政府间的光热，传至到每一座城市的每一处角落。人与人之间最本初的情感，才是城市的温度。</p>
+<p>&emsp;&emsp;海上钢琴师，你现在可否听见，城市冰冷的外表下，是沸腾的血液。城市这座太大太大的“琴”，你或我一人当然无法弹奏，因为这座琴，本就为共奏而生。<br>&emsp;&emsp;城市里，只要点点微光汇聚，它的温度，就能亮彻一切黑暗。</p>
+<h2 id="致敬平凡英雄"><a href="#致敬平凡英雄" class="headerlink" title="致敬平凡英雄"></a>致敬平凡英雄</h2><p>&emsp;&emsp;今年，吉林省的3月与以往有些不同：南湖公园不再人来人往，伪满皇宫没有了往日的喧嚣，临江门大桥少了车水马龙，松江中路不似往常喧嚣热闹……卷土重来的新冠疫情为我们的城市按下了暂停键，也让我看到了那些平凡英雄的底色。<br>&emsp;&emsp;为爱负重的英雄</p>
+<p>&emsp;&emsp;凌晨，吉林大学的校园里一片寂静，62岁的刘淑贤阿姨在空无一人的楼道里忙碌着。她先把消杀过的地面仔细拖干，然后拿起一个能装下三个自己的大号编织袋奔向六楼，那里还有不少使用过的餐盒等着她搬到一楼处理。六楼、五楼、四楼…… 身材瘦小的她躬着腰，背着右手，拽着一百多斤重的垃圾袋，一阶一阶往下走，她心中只有一个质朴的信念：我要把封控管理下的孩子们照顾好。</p>
+<h4 id="饮风咽雪的英雄"><a href="#饮风咽雪的英雄" class="headerlink" title="饮风咽雪的英雄"></a>饮风咽雪的英雄</h4><p>&emsp;&emsp;午后，长春健民市场旁的帐篷前站着两排等着核酸检测的群众，一名防疫人员端着盒饭左顾右盼。他心里想：“等待核酸检测的人还有很多，我得就近找个地方吃饭。”看着不远处停放的汽车，他心中一乐：“那就是咱的餐桌！”他把盒饭放到汽车后背箱上，一边用冻得痛红的左手小心地扶着饭盒，一边用右手夹着饭菜哆哆嗦嗦地往嘴里送。路过的行人看见冷风卷着雪花直往他嘴里钻，心疼地说：“找一个不下雪的地方去吃吧！”他淡然一笑：“没事，吃一口得了。”不是不感觉冷，站在冰雪里草草裹腹只是为了和病毒抢时间。</p>
+<h4 id="披星戴月的英雄"><a href="#披星戴月的英雄" class="headerlink" title="披星戴月的英雄"></a>披星戴月的英雄</h4><p>&emsp;&emsp;深夜，磐石朝阳山高速路口略显空荡，一名交警穿着“绿马夹”挺立在冰天雪地之中。只要有汽车驶进路口，他就会迅速走上前去，立正，敬礼，然后大声说道：“请司机出示驾驶证，请所有人配合测温登记并出示核酸检测证明。”这样的动作他每天不厌其烦地重复做着，这样的话语他每天郑重其事地反复说着，他以独特的“夜间荧光模式”做到了不漏一车、不落一人，倾尽全力只为守好磐石阻击疫情的西大门。</p>
+<p>&emsp;&emsp;在人生漫漫长途中，万物皆有回转，当我们觉得余味苦涩，请你相信，一切终有回甘。从晨光熹微到夜幕阑珊，从人才辈出的大学校园到车来车往的高速路口，从雪鬓霜鬟的六旬老人到年富力强的七尺壮汉，吉林人用自己实实在在的行动告诉世人：有一分热，发一分光！吉林有我们，抗疫必胜！  </p>
+<h2 id="有风吹过"><a href="#有风吹过" class="headerlink" title="有风吹过"></a>有风吹过</h2><p>&emsp;&emsp;一阵风吹过，拂起了桌上的书页；一缕阳光洒下，照亮了忙碌的人们。</p>
+<p align="right">——题记</p>
+
+<p>&emsp;&emsp;“16栋1单元的家人们！下来领饭啦！”她又在小区微信群里发领饭的信息——这已经是我们小区隔离的第十天。我照常下楼，毫不意外再一次看到她的身影。她娇小的身躯在宽大的防护服里竟一点也不违合，她组织好我们排好队，一个一个地分发盒饭。登记、弯腰、登记、弯腰……如此重复，她的眼中闪过一丝疲惫，却丝豪掩盖不了她的热情。一栋楼，大概有一百人下来领饭。也就是说，她每天要重复两百次这样的动作。当我们谈笑风生，愉悦地用餐时，她仍在忙忙碌碌；当我们用餐完毕，她才坐在椅子上，轻轻捶着腰……微风吹过，带来一阵清爽和宁静，她又忙着给大爷大妈们疏导情绪，告诉大家不要焦虑担忧，要相信政府，配合工作。不管何时，只要我望向窗外，就能看到他们忙忙碌碌的身影。这一刻，我的心是踏实的……</p>
+<p>&emsp;&emsp;小区的杜鹃花开了，红得耀眼，白得纯净，在春风中摇曳着。又一次，我站在医护人员前做核酸。短短的动作，他却做了成千上万遍，娴熟得行云流水。隔着防护面罩，我无意间却看到了他眼底的血丝与疲惫。我的心一紧，对他升起了几分敬意。明明隔着口罩，我却分明感受到他的笑意。我不由地说：“辛苦了，谢谢你们！”他抬起头温和地问：“小朋友，读几年级了？”“七年级！”我微笑着回答。他向我点点头，又忙着给下一个人做核酸检测了。厚厚的防护服，却掩不住他对人们的善意和热情。有这样的人在，不久后，疫情就能好转吧？</p>
+<p>&emsp;&emsp;在这个特殊的时刻，人们隔着口罩交流，似乎感觉关系更疏远了，又好像更近了。邻居们都变得热情起来，谁有困难，大家一起想法子。脸上的笑容好像多了，更真挚了。精神上的思想似乎统一了，所向往的未来貌似也一致了。这家的孩子要上课，那家的老人就去休息，人们就自觉地安静下来。王家要打印资料，李家立马来帮忙；张家没领到物资，周家马上送过来……</p>
+<p>&emsp;&emsp;风，轻轻地吹，温柔细腻。人们相互鼓励着、扶持着。每个人心里好像都住着一簇小火苗，温暖而热烈。谁敢说，这场疫情封闭了人们的心？<br>&emsp;&emsp;风，轻轻吹过。我想，要不了多久，我就可以回到校园了吧？</p>
+<h2 id="微光"><a href="#微光" class="headerlink" title="微光"></a>微光</h2><p>&emsp;&emsp;有一分热，发一分光，就像萤火虫一般，也可以在黑暗里发一点光，不必等候火炬。</p>
+<p align="right">——鲁迅</p>
+
+<p>&emsp;&emsp;突如其来的疫情反弹，给我所生活的城市——赣州，按下了暂停键……</p>
+<p>&emsp;&emsp;夜深了，好不容易入睡了，却又被叫醒，说是要去做核酸，我揉了揉惺忪的睡眼，跟着妈妈去了。虽是深夜，但做核酸的队伍仍排成了一条长龙。轮到我们时，我快步走向医护人员，只见医护人员熟练地抽出棉签，伸进我嘴里，随后塞进一个红管子中，这样的动作他们不知道重复了多少遍……透过厚厚的面罩，我看见医护人员的眼睛有些许疲惫，但眼神中充满坚毅，这给了我莫大的鼓舞。</p>
+<p>&emsp;&emsp;回去补了一觉后觉得神清气爽，向阳台外望去，楼下是寂静无人的广场，只有几朵“小白花”点缀着。我看见，医护人员或蜷在小区的长椅上，或席地而躺，或互相依靠……他们又熬过了一个通宵。但只要有人来做核酸，他们就又要打起精神来继续工作。我是睡足了，可他们却没有一张踏实的床，没能睡一个安稳的觉。他们有一份光，便发出一份热，坚持用自己的微光，照亮了这座城市。</p>
+<p>&emsp;&emsp;除了可爱的“大白”们，小区里还行走着一些同样“显眼”的人物——志愿者。志愿者们负责消毒、喷杀和送餐等工作。令我感动的是，小区里一位腿脚不便的大爷也报名参加了。看着他一瘸一拐却又认真喷杀消毒的样子，不禁令我动容。一次次的喷杀消毒，他们不厌其烦；一次次的呼号，他们的声音充满铿锵；一次次的送餐，他们传递着爱与能量。他们用自己的微光，温暖着我们这座城市。</p>
+<p>&emsp;&emsp;在这段特殊时期，我所在的小区被封控了。为了保证我们的学习进度，老师们纷纷化身“主播”，通过钉钉用直播的方式授课。老师还专门为我们开了微信群，群名就叫“停课不停学，我们与你们在一起”，当我看到这个名字时，一股暖流在心中悄然涌动，时刻提醒自己：你不是一个人在战斗！老师们默默的付出，用点点微光，照亮和温暖着我的心灵！</p>
+<p>&emsp;&emsp;微光，虽然微小，但只要他们聚集在一起，便能照亮最黑暗的夜，温暖最寒冷的冬天。我想，我也要变成微光中的一点，去发光，去发热，去照亮和温暖这个世界！</p>
+<h2 id="疫情中最美的人"><a href="#疫情中最美的人" class="headerlink" title="疫情中最美的人"></a>疫情中最美的人</h2><p>&emsp;&emsp;在“疫情”的影响下，城市仿佛被按下了“暂停”键。昔日车水马龙，如今门可罗雀。路灯依然陪伴着城市夜晚；玉兰花依旧在风中含苞待放；高高挂起的红灯笼，倔强地提示此时仍然是一年中最重要的春节。</p>
+<p>&emsp;&emsp;我的脑海里，一遍遍浮现出病毒可怕模样。世界仿佛一夜之间就变了，人与人不敢亲近，而我也不能和以前一样随心所欲地走向大街。新闻中每天不断上升的数字，无时无刻不在提醒着大家不要出门。</p>
+<p>&emsp;&emsp;夜晚妈妈看我时常站在窗口眺望远方，终于说：“方呈瑞，要不我骑着电瓶车带你出去绕一圈吧，戴好口罩，不要乱摸。”第一次因为可以出门，欣喜万分。</p>
+<p>&emsp;&emsp;坐在妈妈电瓶车后座的我，惊奇地发现在城市每个小区的门口，都出现了一座座“蘑菇房”，说是“蘑菇房”，其实就是一个个简易的帐篷。帐篷里的每个人，穿着红马甲，戴着普通口罩。</p>
+<p>&emsp;&emsp;母亲告诉我，他们是志愿者。守护着各个小区大门，劝导大家尽量不要出门，并做好小区进出登记工作。</p>
+<p>&emsp;&emsp;夜晚街道安静。简易的帐篷抵挡不住早春的寒风。很多帐篷里没有灯，只能借助路灯微弱光线，可是志愿者们仍然一丝不苟地填写通行证，做好小区进出人员登记。我心里默默的想，“病毒如此可怕，他们难道不危险吗？”</p>
+<p>&emsp;&emsp;一杯水，一桶方便面成了每个帐篷的标配，我恍然大悟原来饭店目前不能开门，志愿者们工作只能靠这些充饥。</p>
+<p>&emsp;&emsp;原本我和妈妈还准备到南湖去走走，妈妈突然改变了主意，“我们回家吧，不能给国家添乱。”</p>
+<p>&emsp;&emsp;回到了家，天空飘起了小雨。我便迫不及待来到窗口。在马路对面也有一个这样的志愿者值守的帐篷。帐篷内有微弱灯光，街上几乎看不见行人，志愿者却仍在坚守，此时已经是晚上8点多，天太冷了，我只看见他们在不停跺脚，来回走动……</p>
+<p>&emsp;&emsp;妈妈手机响起，不用说，那肯定是爸爸的。一张照片格外显眼，穿着红马甲，戴着口罩，爸爸也在衢州小区门口值守。晚上9点，他刚下班。</p>
+<p>&emsp;&emsp;我的脑海里浮现出一幅画面，帐篷中的每个志愿者像一个个小太阳，温暖着城市大街小巷。你们是战“疫”中最美的人，让我们相信有爱就有力量，有爱就有希望！（作者：方呈瑞）</p>
+<h2 id="疫情中最美的人-1"><a href="#疫情中最美的人-1" class="headerlink" title="疫情中最美的人"></a>疫情中最美的人</h2><p>&emsp;&emsp;“你好，请出示一下健康码。”一个六十来岁的爷爷从小区门口新搭的棚子里站起来笑着说。他，就是我们小区的“物业管理员”。</p>
+<p>&emsp;&emsp;他是一名退休教师，写得一手漂亮的黑板字，每次做出来的黑板报用“惊艳”两字形容毫不过分。每天天还未亮，他便拖着垃圾桶出小区，回来后便开始打扫卫生。他一直尽职尽责。</p>
+<p>&emsp;&emsp;这次疫情来临，小区志愿者人数不够，他义无反顾地站了出来。大家都说他平时已经够辛苦了，现在还要兼做志愿者，不要把身体搞坏了。他却不屑一顾的说：“这有什么，这疫情期间我工作量都少了，再说我当当志愿者也没什么。这国难当头，总要想着做点儿贡献啊！”</p>
+<p>&emsp;&emsp;“出什么？”车主把他那尖嘴猴腮的脸向外探了探，一脸的不屑。“健康码。”爷爷说道，他似乎已经察觉“来者不善”，语气依旧温和，只是多了几分命令与严肃。“哼，”车主用他那干巴巴的眼神瞟了一眼棚内，“不用这么认真吧。我看你这体温也测了，不是很正常的吗？再说我就给我弟弟送一包口罩，吃个饭就走，通融通融算了，啊？”车主将他那瘦长的、仿佛龟裂的土地般的脖子缩了回去，将手肘搭在车窗上，一副半讨好、半商量的样子。“不好意思，没有健康码不得进入小区。”爷爷义正辞严。“哎，你怎么这样呢？”车主皱起眉头，仿佛一团皱折的报纸。车主见爷爷不吃硬的，只好再次讨好：“哎呀，你看我这不是因为怕麻烦嘛就没办，我弟就住在一栋三单元二零……”“怎么了，刘老师？”（老爷爷姓刘）本该早些来一起值班的叔叔扣着红马甲的扣子赶了过来。“没什么，这位兄弟没办健康码要进小区！”爷爷放下报纸和刚准备戴的老花镜，温和的笑着，眼角犹如漾开的水波，泛起皱纹。车主上下打量了一下叔叔，似乎觉得人多了也说不过，给自己找了个台阶：“你们不让进，我这东西怎么送，你们又送不了。”“也不是完全不可以，只要你留下他的电话和姓名……”爷爷仍旧笑着，一字一句的说着，还准备找纸和笔。“哎呀哎呀，交给你们不放心……”车主像个乌龟似的又缩了缩，话音未落便调转车头走了。</p>
+<p>&emsp;&emsp;这位爷爷是战“疫”中最美的人，他秉公执法，毫不“徇私枉法”，甘愿为这场没有硝烟的战争做出自己的贡献。他，就是战“疫”中最美的人！（作者：方懿然）</p>
+<h2 id="疫情中最美的人-2"><a href="#疫情中最美的人-2" class="headerlink" title="疫情中最美的人"></a>疫情中最美的人</h2><p>&emsp;&emsp;早上7点25分，妈妈早早地就把我送到了校门口。一下车，我就看到了那一个个身着红马甲、手举礼让牌，在瑟瑟寒风中护送小朋友过马路的红色背影……</p>
+<p>&emsp;&emsp;咦，这位家长志愿者，背微微佝偻——那不是爷爷吗？可他不是刚做完肠息肉手术在家休养吗？我疑惑极了，试着喊了一声：“爷爷！”只见那个红色背影转过了身，露出了我最熟悉的专属于爷爷的笑容！“大宝，你来啦！”爷爷笑着朝我走了过来，拉起了我的手，“你来得非常早哦！”“爷爷你来得更早呀！”我开心地拉上爷爷的手，边走边问，“爷爷，您怎么做家长志愿者啦？这是要站很久的，会不会冷啊？”“爷爷不冷，拉着你们的小手过马路，可暖和啦！”是啊，爷爷的大手虽然布满粗糙的老茧，但是却暖和极了！</p>
+<p>&emsp;&emsp;“可是爷爷，你不是刚做完手术需要休息的嘛？”我按捺不住心中的疑惑，一个劲儿地问。爷爷握了握我的手：“只是个小手术，没问题的……这不是“家长护卫队”缺人手嘛，我又有空，就来啦！”“爷爷谢谢您！”</p>
+<p>&emsp;&emsp;送我进校门后，爷爷转过身，又去护送别的小朋友了。望着爷爷逐渐走远的红色背影，不到一米六五的他在人群中穿梭，看起来是那么不起眼，可那一抹红色，在我眼里越来越却鲜艳……</p>
+<p>&emsp;&emsp;正是这个矮小却又高大的红色背影，在这个寒假突如其来的新冠疫情战役中，又忙着穿梭于社区的各个志愿服务点：登记进出人员、测量体温、为居家隔离人员送物资……正是这个矮小却又高大的红色背影，引领我们全家人都变成了“红色”中的一员——爸爸深夜在农村社区卡点值勤，妈妈发动朋友圈力量为湖北青少年发展基金会捐款，我和弟弟写诗歌、录视频、绘图画，用自己小小的力量宣传抗疫公益……</p>
+<p>&emsp;&emsp;正是这一抹又一抹的红色，绘成了疫情期间最美的风景线！</p>
+<p>&emsp;&emsp;正是这一抹又一抹的红色，守护着我们共同的家园！</p>
+<p>&emsp;&emsp;感谢您，最美的红色！</p>
+
+    </article>
+    <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://amlkiller.github.io">amlkiller</a>
+            <p>原文链接：<a href="https://amlkiller.github.io/posts/c02709ca/">https://amlkiller.github.io/posts/c02709ca/</a>
+            <p>发表日期：<a href="https://amlkiller.github.io/posts/c02709ca/">May 8th 2022, 12:00:00 am</a>
+            <p>更新日期：<a href="https://amlkiller.github.io/posts/c02709ca/">May 8th 2022, 9:16:17 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/posts/d1abe2af/" title="中考真题「这样多美丽」">
+                    <div class="nextTitle">中考真题「这样多美丽」</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/posts/7471d5a7/" title="API Photos Repository(SFW-Anime)">
+                    <div class="prevTitle">API Photos Repository(SFW-Anime)</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
+
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+            
+
+        </div>
+    
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
+    
+</main>
+
+                <!-- profile -->
+                
+            </div>
+            <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+        <div class="social">
+            
+    
+        
+            
+                <a href="mailto:2087663148@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="https://github.com/amlkiller" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+            
+                <span class="iconfont-archer qq" title=qq>
+                    
+                    <img class="profile-qr" src="https://pic.baixiongz.com/uploads/2021/04/19/10aa095b3aef2.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://space.bilibili.com/319764854" class="iconfont-archer bilibili" target="_blank" title=bilibili></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+        </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- website approve for Chinese user -->
+    
+    <!-- 不蒜子  -->
+    
+        <div class="busuanzi-container">
+            
+             
+                <span id="busuanzi_container_site_pv">访问次数: <span id="busuanzi_value_site_pv"></span> 次</span>
+            
+        </div>
+    	
+</footer>
+
+        </div>
+        <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">序</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%98%85%E8%AF%BB%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">阅读类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%A8%E9%A6%99%E5%BE%98%E5%BE%8A%E4%BE%9D%E6%97%A7"><span class="toc-number"></span> <span class="toc-text">墨香徘徊依旧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E%E4%BD%A0%E5%90%8C%E8%A1%8C"><span class="toc-number"></span> <span class="toc-text">与你同行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%A6%E4%B8%80%E6%9C%AC%E4%B9%A6%E5%8E%BB%E6%97%85%E8%A1%8C"><span class="toc-number"></span> <span class="toc-text">带一本书去旅行</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A5%BF%E6%B9%96%E8%BE%B9"><span class="toc-number">1.</span> <span class="toc-text">西湖边</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%BF%E5%A4%A9%E5%AF%BA%E4%B8%AD"><span class="toc-number">2.</span> <span class="toc-text">承天寺中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%90%E5%B1%B1%E4%B8%8A"><span class="toc-number">3.</span> <span class="toc-text">庐山上</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%85%E8%AF%BB%EF%BC%8C%E8%AE%A9%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%B2%BE%E5%BD%A9"><span class="toc-number"></span> <span class="toc-text">阅读，让我的生活更精彩</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%B2%E6%83%85%E7%B1%BB"><span class="toc-number"></span> <span class="toc-text">亲情类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%8D%E4%BA%B2"><span class="toc-number"></span> <span class="toc-text">母亲</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BB%8B%E5%91%B3"><span class="toc-number"></span> <span class="toc-text">滋味</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%88%E5%A6%88%E7%9A%84%E5%8F%91%E8%89%B2"><span class="toc-number"></span> <span class="toc-text">妈妈的发色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A5%B6%E5%AD%99"><span class="toc-number"></span> <span class="toc-text">奶孙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E6%9C%80%E6%83%B3%E5%81%9A%E7%9A%84%E4%BA%8B"><span class="toc-number"></span> <span class="toc-text">我最想做的事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%B6%E5%AD%90"><span class="toc-number"></span> <span class="toc-text">父子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%9F%E5%8A%A8"><span class="toc-number"></span> <span class="toc-text">感动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%97%E7%96%AB-%E7%96%AB%E6%83%85"><span class="toc-number"></span> <span class="toc-text">抗疫 疫情</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%AB%E8%B7%AF%E7%9B%B8%E4%BC%B4%EF%BC%8C%E4%B8%BA%E5%BF%83%E6%8A%A4%E8%88%AA"><span class="toc-number"></span> <span class="toc-text">疫路相伴，为心护航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B0%E5%A4%A9%E9%9B%AA%E5%9C%B0%E9%87%8C%E7%9A%84%E2%80%9C%E6%95%99%E7%A7%91%E4%B9%A6%E2%80%9D"><span class="toc-number"></span> <span class="toc-text">冰天雪地里的“教科书”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E5%94%B1"><span class="toc-number"></span> <span class="toc-text">合唱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%A5%E9%A3%8E%E5%8D%81%E9%87%8C%E4%B8%8D%E5%A6%82%E4%BD%A0"><span class="toc-number"></span> <span class="toc-text">春风十里不如你</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%A5%E7%9A%84%E5%91%8A%E7%99%BD"><span class="toc-number"></span> <span class="toc-text">春的告白</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%8E%E5%B8%82%E7%9A%84%E6%B8%A9%E5%BA%A6"><span class="toc-number"></span> <span class="toc-text">城市的温度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%B4%E6%95%AC%E5%B9%B3%E5%87%A1%E8%8B%B1%E9%9B%84"><span class="toc-number"></span> <span class="toc-text">致敬平凡英雄</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A5%AE%E9%A3%8E%E5%92%BD%E9%9B%AA%E7%9A%84%E8%8B%B1%E9%9B%84"><span class="toc-number">1.</span> <span class="toc-text">饮风咽雪的英雄</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%AB%E6%98%9F%E6%88%B4%E6%9C%88%E7%9A%84%E8%8B%B1%E9%9B%84"><span class="toc-number">2.</span> <span class="toc-text">披星戴月的英雄</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E9%A3%8E%E5%90%B9%E8%BF%87"><span class="toc-number"></span> <span class="toc-text">有风吹过</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E5%85%89"><span class="toc-number"></span> <span class="toc-text">微光</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%AB%E6%83%85%E4%B8%AD%E6%9C%80%E7%BE%8E%E7%9A%84%E4%BA%BA"><span class="toc-number"></span> <span class="toc-text">疫情中最美的人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%AB%E6%83%85%E4%B8%AD%E6%9C%80%E7%BE%8E%E7%9A%84%E4%BA%BA-1"><span class="toc-number"></span> <span class="toc-text">疫情中最美的人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%AB%E6%83%85%E4%B8%AD%E6%9C%80%E7%BE%8E%E7%9A%84%E4%BA%BA-2"><span class="toc-number"></span> <span class="toc-text">疫情中最美的人</span></a>
+            </div>
+        
+        <!-- sidebar -->
+        <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+        <div class="sidebar-panel-archives">
+    <!-- 在 ejs 中将 archive 按照时间排序 -->
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 18
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+        
+            
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span>
+            <a class="archive-post-title" href="/posts/d1abe2af/">中考真题「这样多美丽」</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/08</span>
+            <a class="archive-post-title" href="/posts/c02709ca/">作文集锦「阅读 亲情 抗疫」</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span>
+            <a class="archive-post-title" href="/posts/7471d5a7/">API Photos Repository(SFW-Anime)</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span>
+            <a class="archive-post-title" href="/posts/5100ca70/">服务器在线人数查询</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span>
+            <a class="archive-post-title" href="/posts/fcd2f60/">收集的API</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/10</span>
+            <a class="archive-post-title" href="/posts/6faaa453/">快速部署软件列表</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/02</span>
+            <a class="archive-post-title" href="/posts/3db43fb3/">作文-遇见</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/26</span>
+            <a class="archive-post-title" href="/posts/2992454b/">Google dino patches</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span>
+            <a class="archive-post-title" href="/posts/b35095ea/">动态内容测试</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/21</span>
+            <a class="archive-post-title" href="/posts/29d7ec04/">流浪地球</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/19</span>
+            <a class="archive-post-title" href="/posts/b6ed33af/">AI唱歌教程与演示</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/14</span>
+            <a class="archive-post-title" href="/posts/f54jg458/">共青团入团指南</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span>
+            <a class="archive-post-title" href="/posts/e5419a0f/">优秀作文-初二下一段</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/12</span>
+            <a class="archive-post-title" href="/posts/a2ba6acf/">周记好作文-word</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/09</span>
+            <a class="archive-post-title" href="/posts/4b7e8252/">音乐视频测试</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/04</span>
+            <a class="archive-post-title" href="/posts/3b319594/">傅雷家书的一些笔记</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span>
+            <a class="archive-post-title" href="/posts/f1f6fe95/">杜玥璃概念设计</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 1955 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/24</span>
+            <a class="archive-post-title" href="/posts/3d0da172/">诞生</a>
+        </li>
+    
+    </div>
+</div>
+
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+        
+            <span class="sidebar-tag-name" data-tags="AI">
+                <span class="iconfont-archer">&#xe606;</span>
+                AI
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="photos">
+                <span class="iconfont-archer">&#xe606;</span>
+                photos
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="API">
+                <span class="iconfont-archer">&#xe606;</span>
+                API
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="Anime">
+                <span class="iconfont-archer">&#xe606;</span>
+                Anime
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="games">
+                <span class="iconfont-archer">&#xe606;</span>
+                games
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="作文">
+                <span class="iconfont-archer">&#xe606;</span>
+                作文
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="初二下学期">
+                <span class="iconfont-archer">&#xe606;</span>
+                初二下学期
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="傅雷家书">
+                <span class="iconfont-archer">&#xe606;</span>
+                傅雷家书
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="共青团">
+                <span class="iconfont-archer">&#xe606;</span>
+                共青团
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="computer">
+                <span class="iconfont-archer">&#xe606;</span>
+                computer
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="MC">
+                <span class="iconfont-archer">&#xe606;</span>
+                MC
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="杜玥璃">
+                <span class="iconfont-archer">&#xe606;</span>
+                杜玥璃
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="novel">
+                <span class="iconfont-archer">&#xe606;</span>
+                novel
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="刘慈欣">
+                <span class="iconfont-archer">&#xe606;</span>
+                刘慈欣
+            </span>
+        
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+        缺失模块，请参考主题文档进行安装配置：https://github.com/fi3ework/hexo-theme-archer#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+
+    </div>
+</div>
+
+        <!-- site-meta -->
+        <script>
+    var siteMetaRoot = "/"
+    if (siteMetaRoot === "undefined") {
+        siteMetaRoot = '/'
+    }
+    var siteMeta = {
+        url: "https://amlkiller.github.io",
+        root: siteMetaRoot,
+        author: "amlkiller"
+    }
+</script>
+
+        <!-- import experimental options here -->
+        <!-- Custom Font -->
+
+
+        <!-- main func -->
+        <script src="/scripts/main.js?v=20210823"></script>
+        <!-- dark mode -->
+        <script src="/scripts/dark.js?v=20210823"></script>
+        <!-- fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+        <!-- algolia -->
+        
+        <!-- busuanzi -->
+        
+            <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+        
+        <!-- CNZZ -->
+        
+        <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20210823" async></script>
+        
+        <!-- mermaid -->
+        
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
